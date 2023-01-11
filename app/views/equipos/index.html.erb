@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="cards">
+      <% @equipos.each do |equipo|  %>
+        <div class="card-trip img-fluid">
+         <%= cl_image_tag(equipo.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+         <div class="card-trip-infos">
+            <a><%= link_to " #{equipo.modelo}"  , equipo_path(equipo) %></a>
+            <p> Marca: <%= equipo.marca %></h2>
+            <p> disponibilidad: <%= equipo.disponible %></h6>
+            <p></p>
+            <a href="<%= equipo.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
+          </div>
+        </div>
+    <% end %>
+  </div>

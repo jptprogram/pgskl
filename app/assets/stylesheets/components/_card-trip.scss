@@ -1,0 +1,54 @@
+.card-trip {
+  overflow: hidden;
+  background:  #fafafa;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 350px;
+  height: 100%;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.card-trip > img {
+  height: auto;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.card-trip-infos a {
+  text-decoration: none;
+  color:$verde_skl;
+  font-size: 24px;
+}
+
+.card-trip-infos a:hover {
+  color:$rojo_skl;
+}

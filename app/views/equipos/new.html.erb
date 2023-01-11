@@ -27,14 +27,8 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "link" }%>
+    <%= f.input :photo, as: :file %>
 
-    <%= f.input :follow_cost, label: "Costo de Segunda Consulta ",
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "follow_cost" }%>
-
-    <%= f.input :photo, label: "foto ",
-    as: :file %>
 
 
 
@@ -42,7 +36,7 @@
   </div>
 
   <div class="btn btn-flat" style="color:white">
-    <%= f.button :submit, "Registrarse" %>
+    <%= f.button :submit, "Crear" %>
   </div>
 <% end %>
 
