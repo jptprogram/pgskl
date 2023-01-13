@@ -1,6 +1,6 @@
 <div class="container">
-<H3>Equipos</H3>
-<%= simple_form_for( @equipo,
+<H3>Tractor</H3>
+<%= simple_form_for( @Tractor,
   data: {turbo: false}) do |f| %>
 
   <%= f.error_notification %>
@@ -27,6 +27,12 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "link" }%>
+
+        <%= f.input :precio, label: "Precio: ",
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "precio" }%>
+
     <%= f.input :photo, as: :file %>
 
 
@@ -36,7 +42,7 @@
   </div>
 
   <div class="btn btn-flat" style="color:white">
-    <%= f.button :submit, "Crear equipo" %>
+    <%= f.button :submit, "Crear Tractor" %>
   </div>
 <% end %>
 

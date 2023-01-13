@@ -1,0 +1,2 @@
+class Maquinariapesada < ApplicationRecord
+end

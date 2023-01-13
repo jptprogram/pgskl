@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card-product">
+    <%= cl_image_tag @tractor.photo.key, height: 300, width: 400, crop: :fill %>
+    <div class="card-product-infos">
+      <h2><%= @tractor.modelo %></h2>
+      <h2><%= @tractor.marca %></h2>
+      <h2><%= @tractor.link %></h2>
+      <p><%= @tractor.disponible %></p>
+    </div>
+  </div>
+</div>

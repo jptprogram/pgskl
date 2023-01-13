@@ -1,0 +1,2 @@
+class Grua < ApplicationRecord
+end

@@ -1,6 +1,6 @@
 <div class="container">
-<H3>Equipos</H3>
-<%= simple_form_for( @equipo,
+<H3>Gruas</H3>
+<%= simple_form_for( @grua,
   data: {turbo: false}) do |f| %>
 
   <%= f.error_notification %>
@@ -36,7 +36,7 @@
   </div>
 
   <div class="btn btn-flat" style="color:white">
-    <%= f.button :submit, "Crear equipo" %>
+    <%= f.button :submit, "Crear grua" %>
   </div>
 <% end %>
 

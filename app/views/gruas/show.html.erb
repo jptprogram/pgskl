@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card-product">
+    <%= cl_image_tag @grua.photo.key, height: 300, width: 400, crop: :fill %>
+    <div class="card-product-infos">
+      <h2><%= @grua.modelo %></h2>
+      <h2><%= @grua.marca %></h2>
+      <h2><%= @grua.link %></h2>
+      <p><%= @grua.disponible %></p>
+    </div>
+  </div>
+</div>
