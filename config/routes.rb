@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   resources :gruas, only: [:new, :create, :index, :show, :delete]
   resources :tractors, only: [:new, :create, :index, :show, :delete]
   resources :maquinariapesadas, only: [:new, :create, :index, :show, :delete]
-  resources :ventas, only: [:new, :create, :index, :show, :delete]
-
+  resources :ventos, only: [:new, :create, :index, :show, :delete]
+  resources :repuestos, only: [:new, :create, :index, :show, :delete]
 end

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="cards">
+        <% @ventos.each do |vento|  %>
+          <div class="card-trip img-fluid">
+          <%= cl_image_tag(vento.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+          <div class="card-trip-infos">
+              <a><%= link_to " #{vento.modelo}"  , vento_path(vento) %></a>
+              <p> Marca: <%= vento.marca %></h2>
+              <p> disponibilidad: <%= vento.disponible %></p>
+              <p> precio: <%= vento.precio %></p>
+              <p></p>
+              <a href="<%= vento.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
+            </div>
+          </div>
+      <% end %>
+  </div>
+</div>
+</div>

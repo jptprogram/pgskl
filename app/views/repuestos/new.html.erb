@@ -1,6 +1,7 @@
+<div class="container-fluid">
 <div class="container">
-<H3>Tractor</H3>
-<%= simple_form_for( @Tractor,
+<H3>Repuesto</H3>
+<%= simple_form_for( @repuesto,
   data: {turbo: false}) do |f| %>
 
   <%= f.error_notification %>
@@ -36,14 +37,12 @@
     <%= f.input :photo, as: :file %>
 
 
-
-
-
   </div>
 
-  <div class="btn btn-flat" style="color:white">
-    <%= f.button :submit, "Crear Tractor" %>
+  <div class="btn btn-flat" >
+    <%= f.button :submit, "Crear articulo a la repuesto" %>
   </div>
 <% end %>
 
+</div>
 </div>

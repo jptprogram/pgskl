@@ -1,4 +1,5 @@
 class MaquinariapesadasController < ApplicationController
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @maquinariapesadas = Maquinariapesada.all

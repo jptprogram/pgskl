@@ -1,6 +1,7 @@
+<div class="container-fluid">
 <div class="container">
 <H3>Tractor</H3>
-<%= simple_form_for( @Tractor,
+<%= simple_form_for( @tractor,
   data: {turbo: false}) do |f| %>
 
   <%= f.error_notification %>
@@ -35,9 +36,10 @@
 
   </div>
 
-  <div class="btn btn-flat" style="color:white">
+  <div class="btn btn-flat">
     <%= f.button :submit, "Crear Tractor" %>
   </div>
 <% end %>
 
+</div>
 </div>

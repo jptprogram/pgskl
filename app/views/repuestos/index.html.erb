@@ -1,0 +1,18 @@
+<div class="container-fluid">
+<div class="container">
+  <div class="cards">
+      <% @repuestos.each do |repuesto|  %>
+        <div class="card-trip img-fluid">
+         <%= cl_image_tag(repuesto.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+         <div class="card-trip-infos">
+            <a><%= link_to " #{repuesto.modelo}"  , repuesto_path(repuesto) %></a>
+            <p> Marca: <%= repuesto.marca %></h2>
+            <p> disponibilidad: <%= repuesto.disponible %></p>
+            <p> precio: <%= repuesto.precio %></p>
+            <p></p>
+            <a href="<%= repuesto.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>

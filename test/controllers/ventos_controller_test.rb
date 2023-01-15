@@ -1,6 +1,6 @@
 require "test_helper"
 
-class VentasControllerTest < ActionDispatch::IntegrationTest
+class VentosControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

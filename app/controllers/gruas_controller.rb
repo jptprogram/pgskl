@@ -1,4 +1,5 @@
 class GruasController < ApplicationController
+  before_action :authenticate_user!, except: [:show, :index]
   def index
     @gruas = Grua.all
   end
