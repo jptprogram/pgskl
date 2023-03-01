@@ -58,10 +58,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_13_154820) do
     t.string "disponible"
     t.string "link"
     t.string "photo"
-    t.boolean "electrica"
-    t.boolean "combustion"
-    t.boolean "apiladores"
-    t.boolean "transpaleta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
