@@ -6,10 +6,6 @@ class CreateGruas < ActiveRecord::Migration[7.0]
       t.string :disponible
       t.string :link
       t.string :photo
-      t.boolean :electrica
-      t.boolean :combustion
-      t.boolean :apiladores
-      t.boolean :transpaleta
 
       t.timestamps
     end

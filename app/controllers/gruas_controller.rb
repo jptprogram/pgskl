@@ -1,5 +1,5 @@
 class GruasController < ApplicationController
-  before_action :authenticate_user!, except: [:show, :index]
+  before_action :authenticate_user!, except: %i[index show]
   def index
     @gruas = Grua.all
   end
@@ -20,6 +20,6 @@ class GruasController < ApplicationController
   private
 
   def grua_params
-    params.require(:grua).permit(:modelo,:marca,:disponible,:link,:photo)
+    params.require(:grua).permit(:modelo,:marca,:disponible,:link,:photo,:category)
   end
 end
