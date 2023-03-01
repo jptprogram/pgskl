@@ -23,7 +23,7 @@
                     required: true,
                     autofocus: true,
                     input_html: { autocomplete: "link" }%>
-        <%= f.select :type, Grua::TYPES, {}, {class: "form-control"} %>
+        <%= f.select :category, Grua::CATEGORIES, {}, {class: "form-control"} %>
         <%= f.input :photo, as: :file %>
       </div>
 

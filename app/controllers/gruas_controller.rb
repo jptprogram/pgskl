@@ -20,6 +20,6 @@ class GruasController < ApplicationController
   private
 
   def grua_params
-    params.require(:grua).permit(:modelo,:marca,:disponible,:link,:photo,:type)
+    params.require(:grua).permit(:modelo,:marca,:disponible,:link,:photo,:category)
   end
 end
