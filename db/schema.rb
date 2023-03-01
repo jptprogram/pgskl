@@ -60,7 +60,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_162453) do
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
+    t.string "category"
   end
 
   create_table "maquinariapesadas", force: :cascade do |t|
