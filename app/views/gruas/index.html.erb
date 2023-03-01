@@ -3,7 +3,7 @@
   <h1>Combustion:</h1>
     <div class="cards">
       <% @gruas.each do |grua|  %>
-          <% if grua.combustion == true %>
+          <% if grua.category == "combustion" %>
             <div class="card-trip img-fluid">
               <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
               <div class="card-trip-infos">
@@ -21,7 +21,7 @@
   <h1>Electrica:</h1>
     <div class="cards">
       <% @gruas.each do |grua|  %>
-        <% if grua.electrica == true %>
+        <% if grua.category == "combustion" %>
         <div class="card-trip img-fluid">
          <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
          <div class="card-trip-infos">
@@ -39,7 +39,7 @@
     <div class="cards">
 
       <% @gruas.each do |grua|  %>
-        <% if grua.transpaleta == true %>
+        <% if grua.category == "combustion" %>
 
         <div class="card-trip img-fluid">
          <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>

@@ -60,6 +60,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_162453) do
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "electrica"
+    t.boolean "combustion"
+    t.boolean "transpaleta"
+    t.boolean "apilador"
     t.string "category"
   end
 
