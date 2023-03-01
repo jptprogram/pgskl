@@ -28,7 +28,21 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "link" }%>
+
+     <%= f.input :electrica, as: :boolean,  label: "electrica",
+                input_html: { autocomplete: "electrica" }%>
+
+     <%= f.input :combustion, as: :boolean, label: "combustion",
+                input_html: { autocomplete: "combustion" }%>
+
+     <%= f.input :apilador, as: :boolean, label: "apilador",
+                input_html: { autocomplete: "apilador" }%>
+
+     <%= f.input :transpaleta,as: :boolean, label: "transpaleta",
+                input_html: { autocomplete: "transpaleta" }%>
+
     <%= f.input :photo, as: :file %>
+
 
 
 

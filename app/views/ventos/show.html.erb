@@ -5,7 +5,7 @@
       <div class="card-product-infos">
         <h2><%= @vento.modelo %></h2>
         <h2><%= @vento.marca %></h2>
-        <h2><%= @vento.link %></h2>
+        <a href="<%= @vento.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
         <h2><%= @vento.precio %></h2>
         <p><%= @vento.disponible %></p>
 

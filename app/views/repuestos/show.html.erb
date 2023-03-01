@@ -5,7 +5,7 @@
     <div class="card-product-infos">
       <h2><%= @repuesto.modelo %></h2>
       <h2><%= @repuesto.marca %></h2>
-      <h2><%= @repuesto.link %></h2>
+      <a href="<%= @repuesto.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
       <h2><%= @repuesto.precio  %></h2>
       <p><%= @repuesto.disponible %></p>
     </div>

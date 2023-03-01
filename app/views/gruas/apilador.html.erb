@@ -1,0 +1,21 @@
+<div class="container-fluid">
+<div class="container">
+  <div class="cards">
+
+      <% @gruas.each do |grua|  %>
+        <% if grua.apilador == "true" %>
+
+        <div class="card-trip img-fluid">
+         <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+         <div class="card-trip-infos">
+            <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
+            <p> Marca: <%= grua.marca %></h2>
+            <p> disponibilidad: <%= grua.disponible %></h6>
+            <p></p>
+            <a href="<%= grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
