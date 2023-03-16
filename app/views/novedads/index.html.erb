@@ -5,10 +5,8 @@
         <div class="card-trip img-fluid">
          <%= cl_image_tag(novedad.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
          <div class="card-trip-infos">
-            <a><%= link_to " #{novedad.modelo}"  , novedad_path(novedad) %></a>
-            <p> Marca: <%= novedad.marca %></h2>
-            <p> disponibilidad: <%= novedad.disponible %></p>
-            <p> precio: <%= novedad.precio %></p>
+            <a><%= link_to " #{novedad.titulo}"  , novedad_path(novedad) %></a>
+            <p> Descripcion: <%= novedad.descripcion %></p>
             <p></p>
             <a href="<%= novedad.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
           </div>

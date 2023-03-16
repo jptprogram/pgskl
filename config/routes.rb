@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :maquinariapesadas, only: [:new, :create, :index, :show, :delete]
   resources :ventos, only: [:new, :create, :index, :show, :delete]
   resources :repuestos, only: [:new, :create, :index, :show, :delete]
+  resources :novedads, only: [:new, :create, :index, :show, :delete]
 end

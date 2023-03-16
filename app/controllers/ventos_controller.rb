@@ -17,9 +17,16 @@ class VentosController < ApplicationController
     redirect_to vento_path(@vento)
   end
 
+  def destroy
+    @vento = Vento.find(params[:id])
+    @vento.destroy
+
+    redirect_to ventos_path
+  end
+
   private
 
   def vento_params
-    params.require(:vento).permit(:modelo,:marca,:disponible,:link,:photo,:precio)
+    params.require(:vento).permit(:modelo,:marca,:disponible,:link,:photo,:precio,:descripcion)
   end
 end

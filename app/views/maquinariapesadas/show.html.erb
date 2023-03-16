@@ -1,13 +1,20 @@
 <div class="container-fluid">
-<div class="container">
-  <div class="card-product">
-    <%= cl_image_tag @maquinariapesada.photo.key, height: 300, width: 400, crop: :fill %>
+<div class="container" style="  display: flex;justify-content: center;">
+  <div class="card-product" style="margin-top: 16px;">
+    <%= cl_image_tag @maquinariapesada.photo.key, height: 600, width: 800, crop: :fill %>
     <div class="card-product-infos">
-      <h2><%= @maquinariapesada.modelo %></h2>
-      <h2><%= @maquinariapesada.marca %></h2>
+      <h2 style="font-size: 24px"><%= @maquinariapesada.modelo %></h2>
+      <h2 style="font-size: 24px"><%= @maquinariapesada.marca %></h2>
       <a href="<%= @maquinariapesada.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-      <p><%= @maquinariapesada.disponible %></p>
+      <p style="font-size: 14px;margin-bot: 12px;"><%= @maquinariapesada.disponible %></p>
     </div>
   </div>
+  <div class="card-product" style="margin-top: 16px;margin-left: 16px;padding: 12px;">
+  <h3 h2 style="font-size:24px"> Descripcion: </h3>
+   <h3 h2 style="font-size:24px"> <%= @maquinariapesada.descripcion %></h3>
+  </div>
 </div>
+  <% if user_signed_in? %>
+  <%= button_to "Delete", maquinariapesada_path(@maquinariapesada), method: :delete, data: { confirm: "Are you sure?" } %>
+  <% end %>
 </div>

@@ -1,13 +1,20 @@
 <div class="container-fluid">
-<div class="container">
-  <div class="card-product">
-    <%= cl_image_tag @grua.photo.key, height: 300, width: 400, crop: :fill %>
+<div class="container" style="  display: flex;justify-content: center;">
+  <div class="card-product" style="margin-top: 16px;">
+    <%= cl_image_tag @grua.photo.key, height: 600, width: 800, crop: :fill %>
     <div class="card-product-infos">
-      <h2><%= @grua.modelo %></h2>
-      <h2><%= @grua.marca %></h2>
+      <h2 style="font-size: 24px"><%= @grua.modelo %></h2>
+      <h2 style="font-size: 24px"><%= @grua.marca %></h2>
       <a href="<%= @grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-      <p><%= @grua.disponible %></p>
+      <p style="font-size: 14px;margin-bot: 12px;"><%= @grua.disponible %></p>
     </div>
   </div>
+  <div class="card-product" style="margin-top: 16px;margin-left: 16px;padding: 12px;">
+  <h3 h2 style="font-size:24px"> Descripcion: </h3>
+   <h3 h2 style="font-size:24px"> <%= @grua.descripcion %></h3>
+  </div>
 </div>
+  <% if user_signed_in? %>
+  <%= button_to "Delete", grua_path(@grua), method: :delete, data: { confirm: "Are you sure?" } %>
+  <% end %>
 </div>

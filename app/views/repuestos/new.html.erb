@@ -34,6 +34,11 @@
                 autofocus: true,
                 input_html: { autocomplete: "precio" }%>
 
+            <%= f.input :descripcion, label: "Descripcion ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "descripcion" }%>
+
     <%= f.input :photo, as: :file %>
 
 

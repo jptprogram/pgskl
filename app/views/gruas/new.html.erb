@@ -23,7 +23,13 @@
                     required: true,
                     autofocus: true,
                     input_html: { autocomplete: "link" }%>
+        <%= f.input :descripcion, label: "Descripcion ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "descripcion" }%>
+
         <%= f.select :category, Grua::CATEGORIES, {}, {class: "form-control"} %>
+
         <%= f.input :photo, as: :file %>
       </div>
 

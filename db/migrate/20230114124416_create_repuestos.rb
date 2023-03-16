@@ -7,6 +7,7 @@ class CreateRepuestos < ActiveRecord::Migration[7.0]
       t.string :photo
       t.string :disponible
       t.string :precio
+      t.string :descripcion
 
       t.timestamps
     end

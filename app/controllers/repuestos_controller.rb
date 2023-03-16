@@ -17,9 +17,16 @@ class RepuestosController < ApplicationController
     redirect_to repuesto_path(@repuesto)
   end
 
+  def destroy
+    @repuesto = Repuesto.find(params[:id])
+    @repuesto.destroy
+
+    redirect_to repuestos_path
+  end
+
   private
 
   def repuesto_params
-    params.require(:repuesto).permit(:modelo,:marca,:disponible,:link,:photo,:precio)
+    params.require(:repuesto).permit(:modelo,:marca,:disponible,:link,:photo,:precio,:descripcion)
   end
 end

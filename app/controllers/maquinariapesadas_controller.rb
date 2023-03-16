@@ -18,9 +18,16 @@ class MaquinariapesadasController < ApplicationController
     redirect_to maquinariapesada_path(@maquinariapesada)
   end
 
+  def destroy
+    @maquinariapesada = Maquinariapesada.find(params[:id])
+    @maquinariapesada.destroy
+
+    redirect_to maquinariapesadas_path
+  end
+
   private
 
   def maquinariapesada_params
-    params.require(:maquinariapesada).permit(:modelo,:marca,:disponible,:link,:photo)
+    params.require(:maquinariapesada).permit(:modelo,:marca,:disponible,:link,:photo,:descripcion)
   end
 end

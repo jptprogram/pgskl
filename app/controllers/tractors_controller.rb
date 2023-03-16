@@ -17,9 +17,16 @@ class TractorsController < ApplicationController
     redirect_to tractor_path(@tractor)
   end
 
+  def destroy
+    @tractor = Tractor.find(params[:id])
+    @tractor.destroy
+
+    redirect_to tractors_path
+  end
+
   private
 
   def tractor_params
-    params.require(:tractor).permit(:modelo,:marca,:disponible,:link,:photo)
+    params.require(:tractor).permit(:modelo,:marca,:disponible,:link,:photo,:descripcion)
   end
 end

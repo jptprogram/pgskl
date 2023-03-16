@@ -3,4 +3,3 @@ class Grua < ApplicationRecord
 
   CATEGORIES = ["Electrica", "Combustion", "Apiladores", "Transpaleta"].freeze
 end
-x
