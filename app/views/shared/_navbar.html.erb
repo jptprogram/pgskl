@@ -11,47 +11,47 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Crear Grua ", new_grua_path, class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Crear Maquinaria Pesada", new_maquinariapesada_path, class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Crear Tractores", new_tractor_path, class: "btn-flat" %>
           </li>
-            <li  style="font-size:24px;color:$azul_skl!;">
+            <li  style="font-size:18px;color:$azul_skl!;">
             <%= link_to "Crear Repuestos", new_repuesto_path, class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!;">
+          <li  style="font-size:18px;color:$azul_skl!;">
             <%= link_to "Crear Equipos Venta", new_vento_path, class: "btn-flat-rojo" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!;">
+          <li  style="font-size:18px;color:$azul_skl!;">
         <%= link_to "Crear Novedad", new_novedad_path, class: "btn-flat" %>
           </li>
-          <li style="font-size:24px;color:$azul_skl!;">
+          <li style="font-size:18px;color:$azul_skl!;">
               <%= link_to "Salir", destroy_user_session_path, data: {turbo_method: :delete}, class: "btn-flat" %>
             </li>
         <% else %>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Gruas",gruas_path ,class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Tractores y agricola",tractors_path ,class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Maquinaria Pesada",maquinariapesadas_path ,class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!;">
+          <li  style="font-size:18px;color:$azul_skl!;">
             <%= link_to "Repuestos", repuestos_path, class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!">
+          <li  style="font-size:18px;color:$azul_skl!">
             <%= link_to "Venta de equipos",ventos_path ,class: "btn-flat-rojo" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!;">
+          <li  style="font-size:18px;color:$azul_skl!;">
         <%= link_to "Novedades", novedads_path, class: "btn-flat" %>
           </li>
-          <li  style="font-size:24px;color:$azul_skl!;">
+          <li  style="font-size:18px;color:$azul_skl!;">
             <%= link_to "Login", new_user_session_path, class: "btn-flat" %>
           </li>
 
