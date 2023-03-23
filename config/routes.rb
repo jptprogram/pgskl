@@ -6,10 +6,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :equipos, only: [:new, :create, :index, :show, :delete]
-  resources :gruas, only: [:new, :create, :index,:show, :delete, :electrica,:combustion,:transpaleta,:apilador]
+  resources :gruas
   resources :tractors, only: [:new, :create, :index, :show, :delete]
   resources :maquinariapesadas, only: [:new, :create, :index, :show, :delete]
   resources :ventos, only: [:new, :create, :index, :show, :delete]
   resources :repuestos, only: [:new, :create, :index, :show, :delete]
   resources :novedads, only: [:new, :create, :index, :show, :delete]
+
 end

@@ -48,6 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_162453) do
     t.string "disponible"
     t.string "link"
     t.string "photo"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -57,7 +58,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_162453) do
     t.string "marca"
     t.string "disponible"
     t.string "link"
-    t.string "photo"
     t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

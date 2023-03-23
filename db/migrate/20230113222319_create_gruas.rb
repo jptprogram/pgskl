@@ -5,9 +5,7 @@ class CreateGruas < ActiveRecord::Migration[7.0]
       t.string :marca
       t.string :disponible
       t.string :link
-      t.string :photo
       t.string :descripcion
-
 
       t.timestamps
     end
