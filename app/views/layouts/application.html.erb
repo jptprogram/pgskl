@@ -12,11 +12,9 @@
   </head>
 
   <body>
-   <%= render "shared/navbar" %>
-      <%= yield %>
-
-  <%= render "shared/footer" %>
-
+    <%= render "shared/navbar" %>
+    <a class="whatsapp-button" href="https://wa.me/15551234567?text=Hello%20there!" target="_blank">Chat on WhatsApp</a>
+    <%= yield %>
+    <%= render "shared/footer" %>
   </body>
-
 </html>
