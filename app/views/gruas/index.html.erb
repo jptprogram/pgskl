@@ -35,15 +35,14 @@
       <% end %>
     <% end %>
     </div>
-  <h1 style="margin-top: 16px;font-size: 18px">Transpaletas:</h1>
+  <h1 style="margin-top: 16px;font-size: 18px">Diesel:</h1>
     <div class="cards">
 
-      <% @gruas.each do |grua|  %>
-        <% if grua.category == "Transpaleta" %>
-
+    <% @gruas.each do |grua|  %>
+      <% if grua.category == "Diesel" %>
         <div class="card-trip img-fluid">
-         <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-         <div class="card-trip-infos">
+          <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+          <div class="card-trip-infos">
             <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
             <p> Marca: <%= grua.marca %></h2>
             <p> disponibilidad: <%= grua.disponible %></h6>
@@ -57,10 +56,8 @@
 
   <h1 style="margin-top: 16px;font-size: 18px">Apiladores:</h1>
     <div class="cards">
-
       <% @gruas.each do |grua|  %>
         <% if grua.category == "Apiladores" %>
-
         <div class="card-trip img-fluid">
          <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
          <div class="card-trip-infos">
@@ -74,8 +71,5 @@
       <% end %>
     <% end %>
   </div>
-
-
-
   </div>
 </div>

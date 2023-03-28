@@ -1,0 +1,2 @@
+class Transpaleta < ApplicationRecord
+end
