@@ -1,4 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "jptoro@backcheck.cl"
   layout "mailer"
+
+  ADMIN_EMAILS = ['jptoro@backcheck.cl', 'rafa@backcheck.cl']
 end

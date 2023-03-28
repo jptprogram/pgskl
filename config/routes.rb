@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   resources :repuestos, only: [:new, :create, :index, :show, :delete]
   resources :novedads, only: [:new, :create, :index, :show, :delete]
 
+
+  namespace :mailer do
+    resources :contact, only: [:create]
+  end
 end
