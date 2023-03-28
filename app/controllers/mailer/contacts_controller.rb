@@ -1,6 +1,5 @@
 module Mailer
-  class ContactController < ApplicationController
-    skip_before_action :authenticate_user!, only: :create
+  class ContactsController < ApplicationController
 
     def create
       @contact = Mailer::Contact.new(contact_params)
@@ -16,7 +15,7 @@ module Mailer
     private
 
     def contact_params
-      params.require(:contact).permit(:email, :message, :phone, :first_name, :last_name, :empresa)
+      params.require(:mailer_contact).permit(:email, :message, :phone, :first_name, :last_name, :empresa)
     end
   end
 end

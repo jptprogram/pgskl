@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
 
   namespace :mailer do
-    resources :contact, only: [:create]
+    resources :contacts, only: [:create]
   end
 end
