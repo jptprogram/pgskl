@@ -1,7 +1,7 @@
 class ContactMailer < ApplicationMailer
   def new_contact_to_user(contact)
     @contact = contact
-    mail(to: @contact.email, subject: 'PSKL te saluda!')
+    mail(to: @contact.email, subject: 'SKL te saluda!')
   end
 
   def new_contact_to_admin(contact)
