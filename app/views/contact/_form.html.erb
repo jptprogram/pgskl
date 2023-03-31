@@ -1,0 +1,58 @@
+
+<%= form_with(model: contact, local: true, class: "container mx-auto", html: { id: 'contact-form' }) do |form| %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="mb-3">
+        <%= form.label :first_name, "First Name", class: "text-white" %>
+        <%= form.text_field :first_name, class: "form-control bg-transparent text-white", required: true %>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="mb-3">
+        <%= form.label :last_name, "Last Name", class: "text-white" %>
+        <%= form.text_field :last_name, class: "form-control bg-transparent text-white",  required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <%= form.label :empresa, "Empresa", class: "text-white" %>
+        <%= form.text_field :empresa, class: "form-control bg-transparent text-white", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="mb-3">
+        <%= form.label :email, "Email", class: "text-white" %>
+        <%= form.email_field :email, class: "form-control bg-transparent text-white",  required: true %>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="mb-3">
+        <%= form.label :phone, "Phone", class: "text-white" %>
+        <%= form.phone_field :phone, class: "form-control bg-transparent text-white", required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <%= form.label :message, "Message", class: "text-white" %>
+        <%= form.text_area :message, class: "form-control bg-transparent text-white", required: true, rows: 5 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="d-flex justify-content-end">
+      <%= form.submit "Submit", class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
