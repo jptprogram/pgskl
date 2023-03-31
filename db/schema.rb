@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,9 +56,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
   create_table "equipos", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "link"
-    t.string "photo"
     t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -67,7 +66,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
   create_table "gruas", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -78,9 +77,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
   create_table "maquinariapesadas", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "link"
-    t.string "photo"
     t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -97,8 +95,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "modelo"
     t.string "marca"
     t.string "link"
-    t.string "photo"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "precio"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -108,9 +105,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
   create_table "tractors", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "link"
-    t.string "photo"
     t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -119,7 +115,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
   create_table "transpaleta_apilador_electricos", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.string "disponible"
+    t.boolean "disponible"
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -142,12 +138,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "marca"
     t.string "modelo"
     t.string "link"
-    t.string "photo"
     t.string "precio"
     t.string "descripcion"
+    t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "disponible"
+    t.boolean "disponible"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

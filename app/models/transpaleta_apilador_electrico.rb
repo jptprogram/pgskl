@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: tractors
+# Table name: transpaleta_apilador_electricos
 #
 #  id          :bigint           not null, primary key
 #  descripcion :string
@@ -11,7 +11,7 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
-class Tractor < ApplicationRecord
+class TranspaletaApiladorElectrico < ApplicationRecord
   has_one_attached :photo
 
   validates :modelo, presence: true
