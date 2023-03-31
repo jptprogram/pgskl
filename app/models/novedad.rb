@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: novedads
+# Table name: novedades
 #
 #  id          :bigint           not null, primary key
 #  descripcion :string

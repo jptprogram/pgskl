@@ -1,6 +1,6 @@
-class CreateNovedads < ActiveRecord::Migration[7.0]
+class CreateNovedades < ActiveRecord::Migration[7.0]
   def change
-    create_table :novedads do |t|
+    create_table :novedades do |t|
       t.string :descripcion
       t.string :titulo
 

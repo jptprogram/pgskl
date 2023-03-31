@@ -21,23 +21,33 @@
                                         <li class="dropdown"><%= link_to "Grúas<i class='fa-regular fa-screwdriver-wrench'></i>".html_safe, gruas_path %>
                                             <ul>
                                               <li><a href="index.html">Combustión<i class="fa-solid fa-fire"></i></a></li>
+                                              <li><%= link_to "Combustión<i class='fa-solid fa-fire'></i>".html_safe, gruas_path(combustion: true) %></li>
                                               <li><a href="index-2.html">Eléctrica<i class="fa-regular fa-bolt-lightning"></i></a></li>
+                                              <li><%= link_to "Eléctrica<i class='fa-regular fa-bolt-lightning'></i>".html_safe, gruas_path(electrica: true) %></li>
                                               <li><a href="index-3.html">Diesel<i class="fa-solid fa-gas-pump"></i></a></li>
+                                              <li><%= link_to "Diesel<i class='fa-solid fa-gas-pump'></i>".html_safe, gruas_path(diesel: true) %></li>
                                             </ul>
                                         </li>
                                         <li><a href="index.html">Tractores<i class="fa-solid fa-tractor"></i></a></li>
+                                        <%= link_to "Tractores<i class='fa-solid fa-tractor'></i>".html_safe, tractores_path %>
                                         <li><a href="index-2.html">Maquinaria Pesada<i class="fa-solid fa-industry"></i></a></li>
+                                        <%= link_to "Maquinaria Pesada<i class='fa-solid fa-industry'></i>".html_safe, maquinaria_pesadas_path %>
                                         <li><a href="index-3.html">Transpaleta/Apilador<i class="fa-solid fa-truck-pickup"></i></a></li>
+                                        <%= link_to "Transpaleta/Apilador<i class='fa-solid fa-truck-pickup'></i>".html_safe, transpaletas_path %>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="index-2.html">Ventas</a>
+                                <li class="dropdown"><a>Ventas</a>
                                     <ul>
                                         <li><a href="about.html">Nuevos<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                                        <%= link_to "Nuevos<i class='fa-solid fa-wand-magic-sparkles'></i>".html_safe, ventos_path(nuevos: true) %>
                                         <li><a href="team.html">Reacondicionados<i class="fa-solid fa-wrench"></i></a></li>
+                                        <%= link_to "Reacondicionados<i class='fa-solid fa-wrench'></i>".html_safe, ventos_path(reacondicionados: true) %>
                                     </ul>
                                 </li>
                                 <li><a href="index-2.html">Novedades</a></li>
+                                <%= link_to "Novedades", novedades_path %>
                                 <li><a href="index-2.html">Operadores</a></li>
+                                <%= link_to "Operadores", operadores_path %>
                             </ul>
                         </div>
                     </nav>

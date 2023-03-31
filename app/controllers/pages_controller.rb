@@ -4,4 +4,7 @@ class PagesController < ApplicationController
   def home
     @contact = Mailer::Contact.new
   end
+
+  def operadores
+  end
 end
