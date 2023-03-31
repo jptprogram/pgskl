@@ -1,5 +1,5 @@
 
-/*** 
+/***
 
 ====================================================================
                           Css For Naxly
@@ -54,7 +54,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
                           Home-DS
@@ -457,7 +457,7 @@
 }
 
 .tabs-box .tab.active-tab{
-  display:block;  
+  display:block;
 }
 
 .tabs-box .tab{
@@ -491,7 +491,7 @@
 	border-radius: 50%;
 }
 
-.about-section .inner-box .video-inner a:after, 
+.about-section .inner-box .video-inner a:after,
 .about-section .inner-box .video-inner a:before {
     width: 110px;
     height: 110px;
@@ -968,7 +968,7 @@
 	-ms-transition:all 1500ms ease;
 	-o-transition:all 1500ms ease;
 	-moz-transition:all 1500ms ease;
-	transition:all 1500ms ease;	
+	transition:all 1500ms ease;
 }
 
 #content_block_02 .content-box .inner-box .progress-box .bar-inner:before{
@@ -1001,11 +1001,11 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
-	transition:all 500ms ease;	
+	transition:all 500ms ease;
 }
 
 #content_block_02 .content-box .inner-box .progress-box .bar-inner.counted .count-text{
-	opacity:1;	
+	opacity:1;
 }
 
 #content_block_02 .content-box .inner-box .progress-box .count-text:after{
@@ -1014,7 +1014,7 @@
 	left:50%;
 	margin-left:-5px;
 	top:100%;
-	border:5px solid transparent;	
+	border:5px solid transparent;
 }
 
 #content_block_02 .content-box .inner-box .progress-box h5{
@@ -1804,7 +1804,7 @@
 
 
 
- /*** 
+ /***
 
 ====================================================================
                           Home-AL
@@ -2323,19 +2323,19 @@
 }
 
 .nav-style-one .owl-nav .owl-next:hover:after{
-	
+
 }
 
 .nav-style-one .owl-nav .owl-next:hover:before {
-    
+
 }
 
 .nav-style-one .owl-nav .owl-prev:hover:after{
-	
+
 }
 
 .nav-style-one .owl-nav .owl-prev:hover:before {
-    
+
 }
 
 
@@ -2903,7 +2903,7 @@
 }
 
 #content_block_04 .content-box .single-item .box a:hover{
-	
+
 }
 
 #content_block_04 .content-box .single-item:first-child .box a i{
@@ -3083,7 +3083,7 @@
 }
 
 .news-section.style-two .news-block-one .inner-box .lower-content .link a:hover{
-	
+
 }
 
 .news-section.style-two .news-block-one .inner-box .lower-content .link a i{
@@ -3441,7 +3441,7 @@
 }
 
 .footer-style-two .widget-section .post-widget .widget-content .post h5 a:hover{
-	
+
 }
 
 .footer-style-two .widget-section .gallery-widget .widget-content .list li{
@@ -3522,7 +3522,7 @@
 
 
 
- /*** 
+ /***
 
 ====================================================================
                           Home-ML
@@ -4174,7 +4174,7 @@
     border-radius: 50%;
 }
 
-.video-faq .video-inner .video-content a:after, 
+.video-faq .video-inner .video-content a:after,
 .video-faq .video-inner .video-content a:before {
     width: 110px;
     height: 110px;
@@ -4275,7 +4275,7 @@
 }
 
 .accordion-box .block .acc-content.current{
-  display:block;  
+  display:block;
 }
 
 #content_block_07 .accordion-box .block .acc-btn .icon-outer{
@@ -4901,7 +4901,7 @@
 
 
 
- /*** 
+ /***
 
 ====================================================================
                           Home-BI
@@ -5371,11 +5371,11 @@
 }
 
 #content_block_08 .content-box .lower-text h6 a{
-	
+
 }
 
 #content_block_08 .content-box .lower-text h6 a:hover{
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 
@@ -5972,7 +5972,7 @@
     top: 0px;
     transition: all 500ms ease;
     opacity: 0;
-} 
+}
 
 .news-section.style-four .news-block-one .inner-box .lower-content .link a:hover:before{
 	opacity: 1;
@@ -6249,7 +6249,7 @@
 
 
 
- /*** 
+ /***
 
 ====================================================================
                           Home-UA
@@ -6850,7 +6850,7 @@ h3 a{
 	text-align: center;
 }
 
-.service-style-four .owl-nav .owl-prev, 
+.service-style-four .owl-nav .owl-prev,
 .service-style-four .owl-nav .owl-next{
     position: relative;
     display: inline-block;
@@ -6868,12 +6868,12 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.service-style-four .owl-nav .owl-prev:hover, 
+.service-style-four .owl-nav .owl-prev:hover,
 .service-style-four .owl-nav .owl-next:hover{
 	color: #fff;
 }
 
-.service-style-four .owl-nav .owl-prev:before, 
+.service-style-four .owl-nav .owl-prev:before,
 .service-style-four .owl-nav .owl-next:before{
     position: absolute;
     content: '';
@@ -6887,7 +6887,7 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.service-style-four .owl-nav .owl-prev:hover:before, 
+.service-style-four .owl-nav .owl-prev:hover:before,
 .service-style-four .owl-nav .owl-next:hover:before{
 	transform: scale(1,1);
 }
@@ -7254,7 +7254,7 @@ h3 a{
 	right: -5px;
 }
 
-.case-style-four .owl-nav .owl-prev, 
+.case-style-four .owl-nav .owl-prev,
 .case-style-four .owl-nav .owl-next{
     position: relative;
     display: inline-block;
@@ -7272,12 +7272,12 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.case-style-four .owl-nav .owl-prev:hover, 
+.case-style-four .owl-nav .owl-prev:hover,
 .case-style-four .owl-nav .owl-next:hover{
 	color: #fff;
 }
 
-.case-style-four .owl-nav .owl-prev:before, 
+.case-style-four .owl-nav .owl-prev:before,
 .case-style-four .owl-nav .owl-next:before{
     position: absolute;
     content: '';
@@ -7291,7 +7291,7 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.case-style-four .owl-nav .owl-prev:hover:before, 
+.case-style-four .owl-nav .owl-prev:hover:before,
 .case-style-four .owl-nav .owl-next:hover:before{
 	transform: scale(1,1);
 }
@@ -7403,7 +7403,7 @@ h3 a{
 }
 
 .team-block-two .inner-box:hover .image-box .contact-box .email i{
-	
+
 }
 
 .team-block-two .inner-box .image-box .contact-box .email:before{
@@ -7473,7 +7473,7 @@ h3 a{
 }
 
 .team-block-two .inner-box:hover .image-box .contact-box .social-links .share{
-	
+
 }
 
 .team-block-two .inner-box .image-box .contact-box .social-links .list{
@@ -7575,7 +7575,7 @@ h3 a{
     right: -5px;
 }
 
-.news-section.style-five .owl-nav .owl-prev, 
+.news-section.style-five .owl-nav .owl-prev,
 .news-section.style-five .owl-nav .owl-next{
     position: relative;
     display: inline-block;
@@ -7593,12 +7593,12 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.news-section.style-five .owl-nav .owl-prev:hover, 
+.news-section.style-five .owl-nav .owl-prev:hover,
 .news-section.style-five .owl-nav .owl-next:hover{
 	color: #fff;
 }
 
-.news-section.style-five .owl-nav .owl-prev:before, 
+.news-section.style-five .owl-nav .owl-prev:before,
 .news-section.style-five .owl-nav .owl-next:before{
     position: absolute;
     content: '';
@@ -7612,7 +7612,7 @@ h3 a{
     transition: all 500ms ease;
 }
 
-.news-section.style-five .owl-nav .owl-prev:hover:before, 
+.news-section.style-five .owl-nav .owl-prev:hover:before,
 .news-section.style-five .owl-nav .owl-next:hover:before{
     transform: scale(1,1);
 }
@@ -8052,7 +8052,7 @@ h3 a{
 
 
 
- /*** 
+ /***
 
 ====================================================================
                           Home-RTL
@@ -8246,7 +8246,7 @@ h3 a{
 
 
 
-/*** 
+/***
 
 ====================================================================
                           About-Page
@@ -8683,7 +8683,7 @@ h3 a{
 }
 
 #content_block_12 .content-box .inner-box .single-item:hover h4:before{
-	
+
 }
 
 #content_block_12 .content-box .inner-box .single-item .box{
@@ -8741,7 +8741,7 @@ h3 a{
 }
 
 
-/*** 
+/***
 
 ====================================================================
                           Contact-Page
@@ -8828,7 +8828,7 @@ h3 a{
 
 
 
-/*** 
+/***
 
 ====================================================================
                           Service-Page
@@ -9125,7 +9125,7 @@ h3 a{
 }
 
 .industries-style-two .video-box a:hover{
-	
+
 }
 
 .industries-style-two .owl-nav{
@@ -9984,7 +9984,7 @@ h3 a{
 
 
 
-/*** 
+/***
 
 ====================================================================
                           Project-Page
@@ -10010,7 +10010,7 @@ h3 a{
 }
 
 .project-page .case-block-two .inner-box .lower-content .box h3 a:hover{
-	
+
 }
 
 .project-two-column .case-block-two .inner-box .lower-content{
@@ -10524,7 +10524,7 @@ h3 a{
 }
 
 
-/*** 
+/***
 
 ====================================================================
                           Blog-Page
@@ -10624,7 +10624,7 @@ h3 a{
 }
 
 .sidebar-page-container .sidebar .sidebar-search .form-group input:focus{
-	
+
 }
 
 .sidebar-page-container .sidebar .sidebar-widget{
@@ -10870,7 +10870,7 @@ h3 a{
 
 .sidebar-page-container .sidebar .sidebar-subscribe .subscribe-form .form-group input:focus + button,
 .sidebar-page-container .sidebar .sidebar-subscribe .subscribe-form .form-group button:hover{
-	
+
 }
 
 .sidebar-page-container .sidebar .sidebar-subscribe .subscribe-form .form-group button:before{
@@ -11271,7 +11271,7 @@ h3 a{
 }
 
 .blog-details-content .inner-box .accordion-box .block .acc-btn.active .icon-outer {
-   
+
 }
 
 .blog-details-content .inner-box .accordion-box .block .acc-btn .icon-outer {
@@ -11586,7 +11586,6 @@ h3 a{
 	position: relative;
 	display: inline-block;
 	font-size: 16px;
-	font-family: 'Josefin Sans'. sans-serif;
 	font-weight: 600;
 	color: #1d165c;
 }
@@ -11709,7 +11708,7 @@ h3 a{
     font-weight: 700;
 }
 
-.nav-btn-box.style-two .btn-inner .prev-btn, 
+.nav-btn-box.style-two .btn-inner .prev-btn,
 .nav-btn-box.style-two .btn-inner .next-btn{
 	margin-bottom: 16px;
 }
@@ -11724,7 +11723,7 @@ h3 a{
 
 
 
-/*** 
+/***
 
 ====================================================================
                           Error-Page
@@ -11816,7 +11815,7 @@ h3 a{
 
 
 
-/*** 
+/***
 
 ====================================================================
                           Coming-Soon-Page
@@ -11997,7 +11996,7 @@ h3 a{
 }
 
 
-/*** 
+/***
 
 ====================================================================
                           Faq-Page
@@ -12011,7 +12010,7 @@ h3 a{
 }
 
 .faq-page-section .accordion-box .block .acc-btn.active .icon-outer {
-   
+
 }
 
 .faq-page-section .accordion-box .block .acc-btn .icon-outer {
