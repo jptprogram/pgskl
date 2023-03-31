@@ -4,7 +4,7 @@
     <div class="col-md-3">
       <div class="mb-3">
         <%= form.label :first_name, "First Name", class: "text-white" %>
-        <%= form.text_field :first_name, class: "form-control bg-transparent text-white", required: true %>
+        <%= form.text_field :first_name, class: "form-control bg-transparent text-white", required: true, data: { landing_target: "firstNameField" } %>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
     <div class="col-md-3">
       <div class="mb-3">
         <%= form.label :email, "Email", class: "text-white" %>
-        <%= form.email_field :email, class: "form-control bg-transparent text-white",  required: true %>
+        <%= form.email_field :email, class: "form-control bg-transparent text-white",  required: true, data: { landing_target: "emailFieldLower" } %>
       </div>
     </div>
 

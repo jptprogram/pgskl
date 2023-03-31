@@ -20,11 +20,9 @@
                                     <ul>
                                         <li class="dropdown"><a href="index-2.html">Grúas<i class="fa-regular fa-screwdriver-wrench"></i></a>
                                             <ul>
-                                                <li><a href="index.html">Header Style One<i class="flaticon-next"></i></a></li>
-                                                <li><a href="index-2.html">Header Style Two<i class="flaticon-next"></i></a></li>
-                                                <li><a href="index-3.html">Header Style Three<i class="flaticon-next"></i></a></li>
-                                                <li><a href="index-4.html">Header Style Four<i class="flaticon-next"></i></a></li>
-                                                <li><a href="index-5.html">Header Style Five<i class="flaticon-next"></i></a></li>
+                                              <li><a href="index.html">Combustión<i class="fa-solid fa-fire"></i></a></li>
+                                              <li><a href="index-2.html">Eléctrica<i class="fa-regular fa-bolt-lightning"></i></a></li>
+                                              <li><a href="index-3.html">Diesel<i class="fa-solid fa-gas-pump"></i></a></li>
                                             </ul>
                                         </li>
                                         <li><a href="index.html">Tractores<i class="fa-solid fa-tractor"></i></a></li>
@@ -106,10 +104,10 @@
 <div class="subscribe-us">
   <div class="large-container">
     <div class="subscribe-inner">
-      <form action="index-2.html" method="post">
+      <form>
         <div class="form-group">
-          <input type="email" name="email" placeholder="Enter Email Address..." required="">
-          <button type="submit"><i class="fa-solid fa-envelope"></i></i>Contáctanos</button>
+          <input type="email" name="email" placeholder="Enter Email Address..." data-landing-target="emailFieldUpper">
+          <button data-action="click->landing#scrollToContact"><i class="fa-solid fa-envelope"></i></i>Contáctanos</button>
         </div>
       </form>
     </div>
@@ -216,7 +214,9 @@
                     </div>
                 </div>
             </div>
-            <div class="more-btn wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms"><a href="index-2.html" class="theme-btn style-five"><i class="fa-solid fa-paint-roller"></i>Comenzar ahora</a></div>
+            <div class="more-btn wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <%= link_to "<i class='fa-solid fa-paint-roller'></i>Comenzar ahora".html_safe, new_user_registration_path, class: "theme-btn style-five" %>
+            </div>
         </div>
     </div>
 </section>
@@ -230,7 +230,9 @@
   <!-- <%#= render 'pages/shared/nuevos' %> -->
 <!-- NUEVOS END -->
 
-<section class="industries-section">
+
+<!-- CONTACTO -->
+<section class="industries-section" id="contact">
   <div class="pattern-layer">
     <div class="pattern-1" style="background-image: url(/assets/landing_images/shape/shape-57.png);"></div>
     <div class="pattern-2" style="background-image: url(/assets/landing_images/shape/shape-58.png);"></div>
@@ -241,7 +243,7 @@
         <div class="content-box">
           <div class="sec-title text-left light">
             <p>Contacta con nosotros</p>
-            <h2>Crea una solicitud y rápidamente tendrás tu cuenta habilitada para realizar y adminstrar consultas.</h2>
+            <h2>Crea una solicitud y rápidamente tendrás acceso a las requisiciones de maquinarias.</h2>
             <div class="decor" style="background-image: url(/assets/landing_images/icons/decor-2.png);"></div>
           </div>
         </div>
@@ -252,7 +254,7 @@
     </div>
   </div>
 </section>
-
+<!-- CONTACTO END -->
 
 <!--Scroll to top-->
 <button class="scroll-top scroll-to-target" data-target="html">
