@@ -1,6 +1,6 @@
 
 
-/*** 
+/***
 
 ====================================================================
 						Template Header Style
@@ -127,7 +127,6 @@
 
 .main-menu .navigation > li > a:after{
   position: absolute;
-  content: "\f107";
   font-family: 'Font Awesome 5 Free';
   font-weight: 700;
   right: -30px;
@@ -144,7 +143,7 @@
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li:hover > a{
-  
+
 }
 
 .main-menu .navigation > li > ul,
@@ -181,7 +180,7 @@
 
 .main-menu .navigation > li > ul.from-right{
   left:auto;
-  right:0px;  
+  right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -191,7 +190,7 @@
 }
 
 .main-menu .navigation > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > a{
@@ -231,12 +230,11 @@
 }
 
 .main-menu .navigation > li > ul > li > a:hover{
-  
+
 }
 
 .main-menu .navigation > li > ul > li.dropdown > a:after{
   font-family: 'Font Awesome 5 Free';
-  content: "\f105";
   position:absolute;
   right:0px;
   top:15px;
@@ -245,7 +243,7 @@
   font-size:16px;
   font-weight:800;
   text-align:center;
-  z-index:5;  
+  z-index:5;
 }
 
 .main-menu .navigation > li > ul > li > ul{
@@ -271,7 +269,7 @@
 
 .main-menu .navigation > li > ul > li > ul.from-right{
   left:auto;
-  right:0px;  
+  right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -281,11 +279,11 @@
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -313,12 +311,11 @@
 }
 
 .main-menu .navigation > li > ul > li > ul > li:hover > a{
-  
+
 }
 
 .main-menu .navigation > li > ul > li > ul > li.dropdown > a:after{
   font-family: 'Font Awesome 5 Free';
-  content: "\f105";
   position:absolute;
   right:20px;
   top:12px;
@@ -326,7 +323,7 @@
   line-height:24px;
   font-size:16px;
   font-weight:900;
-  z-index:5;  
+  z-index:5;
 }
 
 .main-menu .navigation > li.dropdown:hover > ul,
@@ -357,7 +354,7 @@
   -moz-transition:all 300ms ease;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 300ms ease;
-  -o-transition:all 300ms ease; 
+  -o-transition:all 300ms ease;
 }
 
 .main-menu .navigation li.dropdown .dropdown-btn{
@@ -378,7 +375,7 @@
 
 .main-menu .navigation li.current.dropdown .dropdown-btn,
 .main-menu .navigation li:hover .dropdown-btn{
-  
+
 }
 
 .main-menu .navigation li.dropdown ul li.dropdown .dropdown-btn{
@@ -486,13 +483,13 @@
 }
 
 .mobile-menu .navbar-collapse{
-  display:block !important; 
+  display:block !important;
 }
 
 .mobile-menu .nav-logo{
   position:relative;
   padding:30px 25px;
-  text-align:left;  
+  text-align:left;
 }
 
 .mobile-menu-visible{
@@ -631,7 +628,7 @@
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .navigation li ul li > a{
@@ -655,7 +652,7 @@
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .navigation li.current > a:before{
@@ -679,16 +676,16 @@
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
   z-index:5;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn.open{
-  background:#fff; 
+  background:#fff;
   color: #3b3b3b;
   -webkit-transform:rotate(90deg);
   -ms-transform:rotate(90deg);
-  transform:rotate(90deg);  
+  transform:rotate(90deg);
 }
 
 .mobile-menu .navigation li > ul,
@@ -717,11 +714,11 @@
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .social-links li a:hover{
-    
+
 }
 
 div#mCSB_1_container{
@@ -754,7 +751,7 @@ div#mCSB_1_container{
 }
 
 .mobile-menu .contact-info ul li a:hover{
-  
+
 }
 
 .mobile-menu .contact-info ul li:last-child{
@@ -793,14 +790,14 @@ div#mCSB_1_container{
   padding-top: 20px;
 }
 
-.main-header.style-two .sticky-header .main-menu .navigation > li.current > a:after, 
+.main-header.style-two .sticky-header .main-menu .navigation > li.current > a:after,
 .main-header.style-two .sticky-header .main-menu .navigation > li:hover > a:after{
-  
+
 }
 
-.main-header.style-two .sticky-header .main-menu .navigation > li.current > a, 
+.main-header.style-two .sticky-header .main-menu .navigation > li.current > a,
 .main-header.style-two .sticky-header .main-menu .navigation > li:hover > a{
-  
+
 }
 
 .main-header.style-three .sticky-header{
@@ -856,7 +853,7 @@ div#mCSB_1_container{
   margin-top: 15px;
 }
 
-.main-header.style-four .sticky-header .main-menu .navigation > li.current > a:after, 
+.main-header.style-four .sticky-header .main-menu .navigation > li.current > a:after,
 .main-header.style-four .sticky-header .main-menu .navigation > li:hover > a:after{
 
 }
@@ -978,7 +975,7 @@ div#mCSB_1_container{
 }
 
 .header-top .support a:hover{
-  
+
 }
 
 .main-header .language{
@@ -1181,14 +1178,14 @@ div#mCSB_1_container{
 }
 
 .search-popup .close-search:hover{
-  
+
 }
 
 .search-popup .search-form{
   position:relative;
   padding:0px 15px 0px;
   max-width:1024px;
-  margin:0 auto;  
+  margin:0 auto;
   margin-top:150px;
   margin-bottom: 100px;
   transition: all 900ms ease;
@@ -1244,7 +1241,7 @@ div#mCSB_1_container{
   font-family: 'Open Sans', sans-serif;
   margin-bottom:20px;
   letter-spacing:1px;
-  text-align:center;  
+  text-align:center;
 }
 
 .search-popup .recent-searches{
@@ -1255,7 +1252,7 @@ div#mCSB_1_container{
 
 .search-popup .recent-searches li{
   display:inline-block;
-  margin:0px 10px 10px 0px; 
+  margin:0px 10px 10px 0px;
 }
 
 .search-popup .recent-searches li a{
@@ -1336,7 +1333,7 @@ div#mCSB_1_container{
 }
 
 .main-header.style-two .header-top .links li a:hover{
-  
+
 }
 
 .header-top .request-btn{
@@ -1570,7 +1567,7 @@ div#mCSB_1_container{
 }
 
 .main-header.style-four .search-box-outer .search-toggler:hover{
- 
+
 }
 
 .main-header.style-four .main-menu .navigation > li > a{
@@ -1675,12 +1672,12 @@ div#mCSB_1_container{
   color: #1d165c;
 }
 
-.main-header.style-five .main-menu .navigation > li.current > a, 
+.main-header.style-five .main-menu .navigation > li.current > a,
 .main-header.style-five .main-menu .navigation > li:hover > a {
 
 }
 
-.main-header.style-five .main-menu .navigation li.current.dropdown .dropdown-btn, 
+.main-header.style-five .main-menu .navigation li.current.dropdown .dropdown-btn,
 .main-header.style-five .main-menu .navigation li:hover .dropdown-btn{
 
 }

@@ -544,6 +544,12 @@
     display: none;
   }
 
+  .banner-image-size {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+  }
+
   #image_block_02 .image-box{
     margin: 0px 0px 30px 0px;
     padding: 0px;
@@ -867,7 +873,7 @@
     display: inline-block;
     margin-top: 26px;
   }
-  
+
   .main-header.style-one .header-upper{
     margin-right: 0px;
   }
@@ -991,7 +997,7 @@
     display: inline-block;
   }
 
-  .header-top .support, 
+  .header-top .support,
   .header-top .social-links{
     float: none;
     display: inline-block;
@@ -1536,7 +1542,7 @@
 }
 
 @media only screen and (max-width: 599px){
-  
+
   .banner-section .content-box h1,
   .banner-style-two .content-box h1,
   .banner-style-three .content-box h1,
