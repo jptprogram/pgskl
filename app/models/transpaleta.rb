@@ -1,5 +1,6 @@
-class Equipo < ApplicationRecord
+class Transpaleta < ApplicationRecord
   has_one_attached :photo
+
   validates :modelo, presence: true
   validates :marca, presence: true
   validates :link, presence: true
