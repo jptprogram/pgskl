@@ -59,6 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "disponible"
     t.string "link"
     t.string "photo"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -68,7 +69,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "marca"
     t.string "disponible"
     t.string "link"
-    t.string "photo"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "category"
@@ -80,6 +81,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "disponible"
     t.string "link"
     t.string "photo"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -98,6 +100,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "photo"
     t.string "disponible"
     t.string "precio"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -108,21 +111,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "disponible"
     t.string "link"
     t.string "photo"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "transpaleta", force: :cascade do |t|
-    t.string "modelo"
-    t.string "marca"
-    t.string "disponible"
-    t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "traspaletas_apilador_electricos", force: :cascade do |t|
+  create_table "transpaleta_apilador_electricos", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
     t.string "disponible"
@@ -150,6 +144,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_170832) do
     t.string "link"
     t.string "photo"
     t.string "precio"
+    t.string "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "disponible"
