@@ -1,4 +1,6 @@
 class Vento < ApplicationRecord
+  CATEGORY = ["Equipos Nuevos", "Equipos Reutilizados"].freeze
+
   has_one_attached :photo
 
   validates :modelo, presence: true

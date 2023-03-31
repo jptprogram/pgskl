@@ -1,6 +1,6 @@
-class CreateTranspaleta < ActiveRecord::Migration[7.0]
+class CreateTranspaletaApiladorElectricos < ActiveRecord::Migration[7.0]
   def change
-    create_table :transpaleta do |t|
+    create_table :transpaleta_apilador_electricos do |t|
       t.string :modelo
       t.string :marca
       t.string :disponible
