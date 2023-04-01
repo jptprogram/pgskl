@@ -1,4 +1,5 @@
 <div class="container-fluid">
+  <h1>Gruas</h1>
   <% if params[:combustion].present? || params[:all].present? %>
     <h1 style="margin-top: 16px;font-size: 18px">Combustion:</h1>
     <%= render partial: "gruas/shared/card", locals: { category: "Combustion" } %>

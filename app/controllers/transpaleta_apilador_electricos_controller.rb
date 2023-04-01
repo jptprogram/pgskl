@@ -1,32 +1,32 @@
 class TranspaletaApiladorElectricosController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   def index
-    @traspaletas = TranspaletaApiladorElectrico.all
+    @transpaletas = TranspaletaApiladorElectrico.all
   end
 
   def show
-    @traspaleta = TranspaletaApiladorElectrico.find(params[:id])
+    @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
   end
 
   def new
-    @traspaleta = TranspaletaApiladorElectrico.new
+    @transpaleta = TranspaletaApiladorElectrico.new
   end
 
   def create
-    @traspaleta = TranspaletaApiladorElectrico.create(traspaleta_params)
-    redirect_to transpaletas_path(@traspaleta)
+    @transpaleta = TranspaletaApiladorElectrico.create(transpaleta_params)
+    redirect_to transpaleta_apilador_electrico_path(@transpaleta)
   end
 
   def destroy
-    @traspaleta = TranspaletaApiladorElectrico.find(params[:id])
-    @traspaleta.destroy
+    @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
+    @transpaleta.destroy
 
-    redirect_to transpaletas_path
+    redirect_to transpaleta_apilador_electrico_path
   end
 
   private
 
-  def traspaleta_params
-    params.require(:traspaleta).permit(:modelo, :marca, :disponible, :link, :photo, :descripcion)
+  def transpaleta_params
+    params.require(:transpaleta).permit(:modelo, :marca, :disponible, :link, :photo, :descripcion)
   end
 end
