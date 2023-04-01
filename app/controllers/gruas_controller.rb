@@ -26,6 +26,19 @@ class GruasController < ApplicationController
 
   private
 
+  def set_gruas
+    case params
+    when params[:combustion].present?
+      @gruas = Grua.where(category: "Combustion")
+    when params[:electrica].present?
+      @gruas = Grua.where(category: "Electrica")
+    when params[:diesel].present?
+      @gruas = Grua.where(category: "Diesel")
+    else
+      @gruas = Grua.all
+    end
+  end
+
   def grua_params
     params.require(:grua).permit(:modelo,:marca,:disponible,:link,:photo,:category,:descripcion)
   end

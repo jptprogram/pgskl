@@ -1,97 +1,3 @@
-<!-- NAVBAR -->
-<header class="main-header style-two">
-    <div class="header-upper">
-        <div class="large-container">
-            <div class="outer-box clearfix">
-                <div class="logo-box pull-left">
-                    <%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610580/logo_skl_bagtzk.jpg", class: "logo-skl mt-3 ms-5" %>
-                </div>
-                <div class="menu-area pull-right clearfix">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler">
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                    </div>
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown"><a>Equipos</a>
-                                    <ul>
-                                        <li class="dropdown"><%= link_to "Grúas<i class='fa-regular fa-screwdriver-wrench'></i>".html_safe, gruas_path %>
-                                            <ul>
-                                              <li><a href="/gruas?combustion=true">Combustión<i class="fa-solid fa-fire"></i></a></li>
-                                              <li><a href="/gruas?electrica=true">Electrica<i class="fa-solid fa-fire"></i></a></li>
-                                              <li><a href="/gruas?diesel=true">Diesel<i class="fa-solid fa-fire"></i></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/tractors">Tractores<i class="fa-solid fa-tractor"></i></a></li>
-                                        <li><a href="/maquinariapesadas">Maquinaria Pesada<i class="fa-solid fa-industry"></i></a></li>
-                                        <li><a href="/transpaleta_apilador_electricos">Transpaleta/Apilador<i class="fa-solid fa-truck-pickup"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a>Ventas</a>
-                                    <ul>
-                                        <li><a href="/ventos?nuevos=true">Nuevos<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
-                                        <li><a href="/ventos?reacondicionados=true">Reacondicionados<i class="fa-solid fa-wrench"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/novedades">Novedades</a></li>
-                                <li><a href="/operadores">Operadores</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="btn-box">
-                        <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five" %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--sticky Header-->
-    <div class="sticky-header">
-        <div class="large-container clearfix">
-            <%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610580/logo_skl_bagtzk.jpg", class: "logo-skl ms-5" %>
-            <div class="menu-area">
-                <nav class="main-menu clearfix">
-                    <!--Keep This Empty / Menu will come through Javascript-->
-                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                        <ul class="navigation clearfix">
-                            <li class="current dropdown"><a href="index-2.html">Equipos</a>
-                                <ul>
-                                    <li class="dropdown"><a href="index-2.html">Grúas<i class="fa-regular fa-screwdriver-wrench"></i></a>
-                                        <ul>
-                                          <li><a href="index.html">Combustión<i class="fa-solid fa-fire"></i></a></li>
-                                          <li><a href="index-2.html">Eléctrica<i class="fa-regular fa-bolt-lightning"></i></a></li>
-                                          <li><a href="index-3.html">Diesel<i class="fa-solid fa-gas-pump"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html">Tractores<i class="fa-solid fa-tractor"></i></a></li>
-                                    <li><a href="index-2.html">Maquinaria Pesada<i class="fa-solid fa-industry"></i></a></li>
-                                    <li><a href="index-3.html">Transpaleta/Apilador<i class="fa-solid fa-truck-pickup"></i></a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="index-2.html">Ventas</a>
-                                <ul>
-                                    <li><a href="about.html">Nuevos<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
-                                    <li><a href="team.html">Reacondicionados<i class="fa-solid fa-wrench"></i></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="index-2.html">Novedades</a></li>
-                            <li><a href="index-2.html">Operadores</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="btn-box">
-                    <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five" %>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- NAVBAR END -->
-
 <!-- BANNER -->
 <section class="banner-style-two">
     <div class="pattern-layer" style="background-image: url(/assets/landing_images/shape/shape-10.png);"></div>
@@ -100,7 +6,7 @@
             <div class="col-lg-5 col-md-12 col-sm-12 content-column">
                 <div class="content-box">
                     <p class="mt-4">Arriendo y venta de equipos con  <strong>el mejor servicio</strong> y la mejor <strong>continuidad operativa</strong> del mercado!</p>
-                    <%= link_to "<i class='fa-solid fa-right-to-bracket'></i>Registrarse".html_safe, new_user_registration_path, class: "theme-btn style-five" %>
+                    <%= link_to "<i class='fa-solid fa-right-to-bracket'></i>Registrarse".html_safe, new_user_registration_path, class: "theme-btn style-five text-decoration-none" %>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 image-column">

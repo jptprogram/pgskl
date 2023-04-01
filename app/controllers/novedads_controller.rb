@@ -1,4 +1,4 @@
-class NovedadesController < ApplicationController
+class NovedadsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
@@ -22,7 +22,7 @@ class NovedadesController < ApplicationController
     @novedad = Novedad.find(params[:id])
     @novedad.destroy
 
-    redirect_to novedades_path
+    redirect_to novedads_path
   end
 
   private

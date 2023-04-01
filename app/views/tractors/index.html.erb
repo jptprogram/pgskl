@@ -1,17 +1,16 @@
 <div class="container-fluid">
-<div class="container">
   <div class="cards">
-      <% @tractors.each do |tractor|  %>
-        <div class="card-trip img-fluid">
-         <%= cl_image_tag(tractor.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-         <div class="card-trip-infos">
-            <a><%= link_to " #{tractor.modelo}"  , tractor_path(tractor) %></a>
-            <p> Marca: <%= tractor.marca %></h2>
-            <p> disponibilidad: <%= tractor.disponible %></h6>
-            <p></p>
-            <a href="<%= tractor.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-          </div>
+    <% @tractors.each do |tractor|  %>
+      <div class="card-trip img-fluid">
+        <%= cl_image_tag(tractor.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
+        <div class="card-trip-infos">
+          <a><%= link_to " #{tractor.modelo}"  , tractor_path(tractor) %></a>
+          <p> Marca: <%= tractor.marca %></h2>
+          <p> disponibilidad: <%= tractor.disponible %></h6>
+          <p></p>
+          <a href="<%= tractor.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
         </div>
+      </div>
     <% end %>
   </div>
 </div>

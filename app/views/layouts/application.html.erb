@@ -7,16 +7,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application_landing", "data-turbo-track": "reload" %>
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <a href="https://wa.me/56987550756?text=Hola!%20Me%20gustaría%20recibir%20información!" target="_blank">
-      <i class="fa-brands fa-whatsapp whatsapp-button"></i>
-    </a>
-    <%= yield %>
-    <%= render "shared/footer" %>
+    <div class="d-flex flex-column">
+      <%= render "shared/navbar" %>
+      <a href="https://wa.me/56987550756?text=Hola!%20Me%20gustaría%20recibir%20información!" target="_blank">
+        <i class="fa-brands fa-whatsapp whatsapp-button"></i>
+      </a>
+      <div class="container" style="margin-top: 100px;">
+        <%= yield %>
+      </div>
+      <%= render "shared/footer" %>
+    </div>
   </body>
 </html>

@@ -1,64 +1,96 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to equipos_path, class: "navbar-brand" do %>
-      <%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610580/logo_skl_bagtzk.jpg" %>
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Crear Grua ", new_grua_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Crear Maquinaria Pesada", new_maquinariapesada_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Crear Tractores", new_tractor_path, class: "btn-flat" %>
-          </li>
-            <li  style="font-size:20px;color:$azul_skl!;">
-            <%= link_to "Crear Repuestos", new_repuesto_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!;">
-            <%= link_to "Crear Equipos Venta", new_vento_path, class: "btn-flat-rojo" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!;">
-        <%= link_to "Crear Novedad", new_novedad_path, class: "btn-flat" %>
-          </li>
-          <li style="font-size:20px;color:$azul_skl!;">
-              <%= link_to "Salir", destroy_user_session_path, data: {turbo_method: :delete}, class: "btn-flat" %>
-            </li>
-        <% else %>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Gruas",gruas_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Tractores y agricola",tractors_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Maquinaria Pesada",maquinariapesadas_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!;">
-            <%= link_to "Repuestos", repuestos_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!">
-            <%= link_to "Venta de equipos",ventos_path ,class: "btn-flat-rojo" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!;">
-        <%= link_to "Novedades", novedades_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:20px;color:$azul_skl!;">
-            <%= link_to "Login", new_user_session_path, class: "btn-flat" %>
-          </li>
-
-
-
-        <% end %>
-      </ul>
+<!-- NAVBAR -->
+<header class="main-header style-two">
+    <div class="header-upper">
+        <div class="large-container">
+            <div class="outer-box clearfix">
+                <a href="/" class="logo-box pull-left">
+                    <%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610580/logo_skl_bagtzk.jpg", class: "logo-skl mt-3 ms-5" %>
+                </a>
+                <div class="menu-area pull-right clearfix">
+                    <!--Mobile Navigation Toggler-->
+                    <div class="mobile-nav-toggler">
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </div>
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a>Equipos</a>
+                                    <ul>
+                                        <li class="dropdown"><a href="/gruas?all=true" class="text-decoration-none">Grúas<i class="fa-regular fa-screwdriver-wrench"></i></a>
+                                            <ul>
+                                              <li><a href="/gruas?combustion=true" class="text-decoration-none">Combustión<i class="fa-solid fa-fire"></i></a></li>
+                                              <li><a href="/gruas?electrica=true" class="text-decoration-none">Electrica<i class="fa-solid fa-fire"></i></a></li>
+                                              <li><a href="/gruas?diesel=true" class="text-decoration-none">Diesel<i class="fa-solid fa-fire"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/tractors" class="text-decoration-none">Tractores<i class="fa-solid fa-tractor"></i></a></li>
+                                        <li><a href="/maquinariapesadas" class="text-decoration-none">Maquinaria Pesada<i class="fa-solid fa-industry"></i></a></li>
+                                        <li><a href="/transpaletas" class="text-decoration-none">Transpaleta/Apilador<i class="fa-solid fa-truck-pickup"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a>Ventas</a>
+                                    <ul>
+                                        <li><a href="/ventos?nuevos=true" class="text-decoration-none">Nuevos<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                                        <li><a href="/ventos?reacondicionados=true" class="text-decoration-none">Reacondicionados<i class="fa-solid fa-wrench"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/novedades" class="text-decoration-none">Novedades</a></li>
+                                <li><a href="/operadores" class="text-decoration-none">Operadores</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="btn-box">
+                        <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five text-decoration-none" %>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+
+    <!--sticky Header-->
+    <div class="sticky-header">
+        <div class="large-container clearfix">
+            <%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610580/logo_skl_bagtzk.jpg", class: "logo-skl ms-5" %>
+            <div class="menu-area">
+                <nav class="main-menu clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                      <ul class="navigation clearfix">
+                          <li class="current dropdown"><a>Equipos</a>
+                              <ul>
+                                  <li class="dropdown"><a href="/gruas?all=true" class="text-decoration-none">Grúas<i class="fa-regular fa-screwdriver-wrench"></i></a>
+                                      <ul>
+                                        <li><a href="/gruas?combustion=true" class="text-decoration-none">Combustión<i class="fa-solid fa-fire"></i></a></li>
+                                        <li><a href="/gruas?electrica=true" class="text-decoration-none">Electrica<i class="fa-solid fa-fire"></i></a></li>
+                                        <li><a href="/gruas?diesel=true" class="text-decoration-none">Diesel<i class="fa-solid fa-fire"></i></a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="/tractors" class="text-decoration-none">Tractores<i class="fa-solid fa-tractor"></i></a></li>
+                                  <li><a href="/maquinariapesadas" class="text-decoration-none">Maquinaria Pesada<i class="fa-solid fa-industry"></i></a></li>
+                                  <li><a href="/transpaletas" class="text-decoration-none">Transpaleta/Apilador<i class="fa-solid fa-truck-pickup"></i></a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown"><a>Ventas</a>
+                              <ul>
+                                  <li><a href="/ventos?nuevos=true" class="text-decoration-none">Nuevos<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                                  <li><a href="/ventos?reacondicionados=true" class="text-decoration-none">Reacondicionados<i class="fa-solid fa-wrench"></i></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="/novedades" class="text-decoration-none">Novedades</a></li>
+                          <li><a href="/operadores" class="text-decoration-none">Operadores</a></li>
+                      </ul>
+                      </div>
+                </nav>
+                <div class="btn-box">
+                  <% if current_user %>
+                    <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five" %>
+                  <% else %>
+                    <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five" %>
+                  <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

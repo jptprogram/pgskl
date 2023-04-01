@@ -14,14 +14,14 @@ class TranspaletaApiladorElectricosController < ApplicationController
 
   def create
     @traspaleta = TranspaletaApiladorElectrico.create(traspaleta_params)
-    redirect_to transpaleta_apilador_electricos_path(@traspaleta)
+    redirect_to transpaletas_path(@traspaleta)
   end
 
   def destroy
     @traspaleta = TranspaletaApiladorElectrico.find(params[:id])
     @traspaleta.destroy
 
-    redirect_to transpaleta_apilador_electricos_path
+    redirect_to transpaletas_path
   end
 
   private

@@ -1,9 +1,9 @@
 
-User.create(email: 'test@skl.com', password: '12345678')
+User.create!(email: 'test@skl.com', password: '12345678')
 
 # Equipos
 10.times do
-  Grua.create(
+  Grua.create!(
     modelo: Faker::Vehicle.model,
     marca: Faker::Vehicle.make,
     disponible: true,
@@ -14,7 +14,7 @@ User.create(email: 'test@skl.com', password: '12345678')
 end
 
 10.times do
-  Tractor.create(
+  Tractor.create!(
     modelo: Faker::Vehicle.model,
     marca: Faker::Vehicle.make,
     disponible: true,
@@ -24,7 +24,7 @@ end
 end
 
 10.times do
-  TranspaletaApiladorElectrico.create(
+  TranspaletaApiladorElectrico.create!(
     modelo: Faker::Vehicle.model,
     marca: Faker::Vehicle.make,
     disponible: true,
@@ -34,7 +34,7 @@ end
 end
 
 10.times do
-  Maquinariapesada.create(
+  Maquinariapesada.create!(
     modelo: Faker::Vehicle.model,
     marca: Faker::Vehicle.make,
     disponible: true,
@@ -45,18 +45,19 @@ end
 
 # Ventos
 10.times do
-  Vento.create(
+  Vento.create!(
     modelo: Faker::Vehicle.model,
     marca: Faker::Vehicle.make,
     disponible: true,
     link: Faker::Internet.url,
     descripcion: Faker::Lorem.paragraph,
-    category: Vento::CATEGORIES.sample
+    category: Vento::CATEGORIES.sample,
+    precio: Faker::Number.decimal(l_digits: 2)
   )
 end
 
 10.times do
-  Novedad.create(
+  Novedad.create!(
     descripcion: Faker::Lorem.paragraph,
     titulo: Faker::Lorem.sentence
   )

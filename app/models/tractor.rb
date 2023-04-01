@@ -18,5 +18,4 @@ class Tractor < ApplicationRecord
   validates :marca, presence: true
   validates :link, presence: true
   validates :disponible, presence: true
-  validates :photo, presence: true
 end
