@@ -14,7 +14,7 @@
 #  updated_at  :datetime         not null
 #
 class Vento < ApplicationRecord
-  CATEGORIES = ["Nuevos", "Reutilizados"].freeze
+  CATEGORIES = ["Nuevos", "Reacondicionados"].freeze
 
   has_one_attached :photo
 

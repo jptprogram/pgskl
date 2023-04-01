@@ -1,7 +1,7 @@
 class VentosController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   def index
-    set_ventos
+    @ventos = Vento.all
   end
 
   def show
@@ -25,17 +25,6 @@ class VentosController < ApplicationController
   end
 
   private
-
-  def set_ventos
-    case params
-    when params[:nuevos].present?
-      @ventos = Vento.where(category: "Nuevo")
-    when params[:reacondicionados].present?
-      @ventos = Vento.where(category: "Reacondicionado")
-    else
-      @ventos = Vento.all
-    end
-  end
 
   def vento_params
     params.require(:vento).permit(:modelo,:marca,:disponible,:link,:photo,:precio,:descripcion)
