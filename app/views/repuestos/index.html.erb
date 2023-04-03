@@ -2,7 +2,7 @@
   <h1>Repuestos</h1>
   <div class="cards">
     <% @repuestos.each do |repuesto|  %>
-      <div class="card-trip img-fluid">
+      <div class="card-trip img-fluid item-animate">
         <%= cl_image_tag(repuesto.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
         <div class="card-trip-infos">
           <a><%= link_to " #{repuesto.modelo}"  , repuesto_path(repuesto) %></a>

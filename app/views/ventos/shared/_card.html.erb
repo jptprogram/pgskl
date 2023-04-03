@@ -1,6 +1,6 @@
 <div class="cards">
   <% @ventos.where(category: category).each do |vento|  %>
-    <div class="card-trip img-fluid">
+    <div class="card-trip img-fluid item-animate">
     <%= cl_image_tag(vento.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
     <div class="card-trip-infos">
         <a><%= link_to " #{vento.modelo}", vento_path(vento) %></a>

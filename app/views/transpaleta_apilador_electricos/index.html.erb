@@ -2,7 +2,7 @@
   <h1>Transpaletas</h1>
   <div class="cards">
       <% @transpaletas.each do |transpaleta|  %>
-        <div class="card-trip img-fluid">
+        <div class="card-trip img-fluid item-animate">
          <%= cl_image_tag(transpaleta.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
          <div class="card-trip-infos">
             <a><%= link_to " #{transpaleta.modelo}", transpaleta_apilador_electrico_path(transpaleta) %></a>
