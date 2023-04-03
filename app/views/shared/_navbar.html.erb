@@ -42,7 +42,11 @@
                         </div>
                     </nav>
                     <div class="btn-box">
+                      <% if current_user %>
+                        <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five text-decoration-none" %>
+                      <% else %>
                         <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five text-decoration-none" %>
+                      <% end %>
                     </div>
                 </div>
             </div>
@@ -85,9 +89,9 @@
                 </nav>
                 <div class="btn-box">
                   <% if current_user %>
-                    <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five" %>
+                    <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five text-decoration-none" %>
                   <% else %>
-                    <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five" %>
+                    <%= link_to "Iniciar Sesión", new_user_session_path, class: "theme-btn style-five text-decoration-none" %>
                   <% end %>
                 </div>
             </div>
