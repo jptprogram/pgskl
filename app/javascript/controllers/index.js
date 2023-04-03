@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import ContactController from "./contact_controller"
+application.register("contact", ContactController)
+
 import LandingController from "./landing_controller"
 application.register("landing", LandingController)

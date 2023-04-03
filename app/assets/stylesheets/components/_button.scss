@@ -82,3 +82,30 @@ background-color: white;
 .whatsapp-button:hover {
   transform: translateY(-50%) scale(0.9);
 }
+
+// skl info button
+.contact-button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-info {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button-container:hover .contact-info {
+  display: block;
+}
+
+.info-item {
+  margin-bottom: 5px;
+}
