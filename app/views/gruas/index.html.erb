@@ -1,81 +1,17 @@
 <div class="container-fluid">
-<div class="container">
-  <h1 style="margin-top: 16px;font-size: 18px">Combustion:</h1>
-    <div class="cards">
-      <% @gruas.each do |grua|  %>
-          <% if grua.category == "Combustion" %>
-            <div class="card-trip img-fluid">
-              <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-              <div class="card-trip-infos">
-                <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
-                <p> Marca: <%= grua.marca %></h2>
-                <p> disponibilidad: <%= grua.disponible %></h6>
-                <p></p>
-                <a href="<%= grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-              </div>
-            </div>
-          <% end %>
-      <% end %>
-    </div>
+  <h1>Gruas</h1>
+  <% if params[:combustion].present? || params[:all].present? %>
+    <h1 style="margin-top: 16px;font-size: 18px">Combustion:</h1>
+    <%= render partial: "gruas/shared/card", locals: { category: "Combustion" } %>
+  <% end %>
 
-  <h1 style="margin-top: 16px;font-size: 18px">Electricas:</h1>
-    <div class="cards">
-      <% @gruas.each do |grua|  %>
-        <% if grua.category == "Electrica" %>
-        <div class="card-trip img-fluid">
-         <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-         <div class="card-trip-infos">
-            <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
-            <p> Marca: <%= grua.marca %></h2>
-            <p> disponibilidad: <%= grua.disponible %></h6>
-            <p></p>
-            <a href="<%= grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-    </div>
-  <h1 style="margin-top: 16px;font-size: 18px">Transpaletas:</h1>
-    <div class="cards">
+  <% if params[:electrica].present? || params[:all].present? %>
+    <h1 style="margin-top: 16px;font-size: 18px">Electricas:</h1>
+    <%=  render partial: "gruas/shared/card", locals: { category: "Electricas" } %>
+  <% end %>
 
-      <% @gruas.each do |grua|  %>
-        <% if grua.category == "Transpaleta" %>
-
-        <div class="card-trip img-fluid">
-         <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-         <div class="card-trip-infos">
-            <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
-            <p> Marca: <%= grua.marca %></h2>
-            <p> disponibilidad: <%= grua.disponible %></h6>
-            <p></p>
-            <a href="<%= grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-
-  <h1 style="margin-top: 16px;font-size: 18px">Apiladores:</h1>
-    <div class="cards">
-
-      <% @gruas.each do |grua|  %>
-        <% if grua.category == "Apiladores" %>
-
-        <div class="card-trip img-fluid">
-         <%= cl_image_tag(grua.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-         <div class="card-trip-infos">
-            <a><%= link_to " #{grua.modelo}"  , grua_path(grua) %></a>
-            <p> Marca: <%= grua.marca %></h2>
-            <p> disponibilidad: <%= grua.disponible %></h6>
-            <p></p>
-            <a href="<%= grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-
-
-
-  </div>
+  <% if params[:diesel].present? || params[:all].present? %>
+    <h1 style="margin-top: 16px;font-size: 18px">Diesel:</h1>
+    <%= render partial: "gruas/shared/card", locals: { category: "Diesel" } %>
+  <% end %>
 </div>

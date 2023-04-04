@@ -2,7 +2,7 @@ class NovedadsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
-    @novedads = Novedad.all
+    @novedades = Novedad.all
   end
 
   def show

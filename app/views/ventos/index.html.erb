@@ -1,19 +1,12 @@
 <div class="container-fluid">
-  <div class="container">
-    <div class="cards">
-        <% @ventos.each do |vento|  %>
-          <div class="card-trip img-fluid">
-          <%= cl_image_tag(vento.photo.key,:aspect_ratio=>"1.0", width: 350, height: 300,:crop=>"fill") %>
-          <div class="card-trip-infos">
-              <a><%= link_to " #{vento.modelo}"  , vento_path(vento) %></a>
-              <p> Marca: <%= vento.marca %></h2>
-              <p> disponibilidad: <%= vento.disponible %></p>
-              <p> precio: <%= vento.precio %></p>
-              <p></p>
-              <a href="<%= vento.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-            </div>
-          </div>
-      <% end %>
-  </div>
-</div>
+  <h1>Ventos</h1>
+  <% if params[:nuevos].present? || params[:all].present? %>
+    <h1 style="margin-top: 16px;font-size: 18px">Equipos Nuevos:</h1>
+    <%= render partial: "ventos/shared/card", locals: { category: "Nuevos" } %>
+  <% end %>
+
+  <% if params[:reacondicionados].present? || params[:all].present? %>
+    <h1 style="margin-top: 16px;font-size: 18px">Equipos Reacondicionados:</h1>
+    <%=  render partial: "ventos/shared/card", locals: { category: "Reacondicionados" } %>
+  <% end %>
 </div>

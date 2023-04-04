@@ -6,6 +6,7 @@
       <h2 style="font-size: 24px"><%= @novedad.titulo %></h2>
       <h2 style="font-size: 24px"><%= @novedad.descripcion %></h2>
     </div>
+    <%= render 'shared/skl_info' %>
   </div>
 </div>
   <% if user_signed_in? %>

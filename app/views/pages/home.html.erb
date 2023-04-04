@@ -1,45 +1,215 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610586/Banner_skl_ulxqhl.jpg);">
-  <div class="container">
-
-
-<% unless user_signed_in? %>
-<h1>SKL tenemos arriendo y venta de equipos con  <strong>el mejor servicio</strong> y la mejor <strong>continuidad operativa</strong> del mercado!</h1>
-    <p>Somos una empresa dedicada al arriendo de maquinarias ,principalmente lo relacionado a la
-logística interna de las empresas , enfocados en grúas horquilla y su gran variedad de aplicaciones
-.
-Nos aseguramos día a día de brindar un servicio impecable que este a la altura de nuestros
-clientes, mantener un equipo de trabajo e infraestructura que asegure un servicio de primer nivel
-,incorporar nuevas tecnologías y mecanismos de trabajo más eficientes y rápidos .
-Nos caracterismos por asegurar continuidad de servicio , atención personalizada en conjunto con
-nuestras propuestas de mejora continua del producto y servicio.
-</p>
-<% end %>
-
-    <div >
-      <ul >
-        <% if user_signed_in? %>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-            <%= link_to "Ver Gruas",gruas_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-            <%= link_to "Ver Tractores y agricola",tractors_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-            <%= link_to "Ver Maquinaria Pesada",maquinariapesadas_path ,class: "btn-flat" %>
-          </li>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-            <%= link_to "Ver Repuestos", repuestos_path, class: "btn-flat" %>
-          </li>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-            <%= link_to "Ver Venta de equipos",ventos_path ,class: "btn-flat-rojo" %>
-          </li>
-          <li  style="font-size:24px;color:$azul_skl!;margin-top: 16px;">
-        <%= link_to "Ver Novedades", novedads_path, class: "btn-flat" %>
-          </li>
-        <% end %>
-      </ul>
+<!-- BANNER -->
+<section class="banner-style-two">
+    <div class="pattern-layer" style="background-image: url(/assets/landing_images/shape/shape-10.png);"></div>
+    <div class="large-container">
+        <div class="row clearfix">
+            <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                <div class="content-box">
+                    <p class="mt-4">Arriendo y venta de equipos con  <strong>el mejor servicio</strong> y la mejor <strong>continuidad operativa</strong> del mercado!</p>
+                    <%= link_to "<i class='fa-solid fa-person-digging'></i>Ver Maquinarias Disponibles".html_safe, gruas_path(all: true), class: "theme-btn style-five text-decoration-none" %>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                <div class="image-box">
+                    <figure class="image image-1 banner-image-size"><img src="/assets/landing_images/banner/banner-grua.png" alt=""></figure>
+                    <figure class="image image-2 rotate-me"><img src="/assets/landing_images/icons/gear-4.png" alt=""></figure>
+                    <figure class="image image-3 rotate-me"><img src="/assets/landing_images/icons/gear-5.png" alt=""></figure>
+                    <figure class="image image-4 rotate-me"><img src="/assets/landing_images/icons/gear-5.png" alt=""></figure>
+                    <figure class="image image-5 rotate-me"><img src="/assets/landing_images/icons/gear-6.png" alt=""></figure>
+                    <div class="anim-icon">
+                        <span class="icon icon-1"></span>
+                        <span class="icon icon-2"></span>
+                        <span class="icon icon-3"></span>
+                        <span class="icon icon-4"></span>
+                        <span class="icon icon-5"></span>
+                        <span class="icon icon-6"></span>
+                        <span class="icon icon-7"></span>
+                        <span class="icon icon-8"></span>
+                        <span class="icon icon-9"></span>
+                        <span class="icon icon-10"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    </li>
+</section>
+<div class="subscribe-us">
+  <div class="large-container">
+    <div class="subscribe-inner">
+      <form>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Enter Email Address..." data-landing-target="emailFieldUpper">
+          <button data-action="click->landing#scrollToContact"><i class="fa-solid fa-envelope"></i></i>Contáctanos</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
+<!-- BANNER END -->
+
+<!-- QUIÉNES SOMOS? -->
+<section class="about-style-two">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                <div id="image_block_01">
+                    <div class="image-box wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="pattern-layer" style="background-image: url(/assets/landing_images/shape/shape-12.png);"></div>
+                        <figure class="image js-tilt"><%= image_tag "https://res.cloudinary.com/dd3nxxiaw/image/upload/v1673610586/Banner_skl_ulxqhl.jpg" %></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                <div id="content_block_03">
+                    <div class="content-box">
+                        <div class="sec-title style-two text-left">
+                            <p>¿Quiénes somos?</p>
+                            <h2>Somos una empresa dedicada al arriendo de maquinarias</h2>
+                            <div class="decor" style="background-image: url(/assets/landing_images/icons/decor-1.png);"></div>
+                        </div>
+                        <div class="text">
+                            <p>Especializados en la logística interna de las empresas, enfocados en grúas horquilla y su gran variedad de aplicaciones.</p>
+                        </div>
+                        <div class="lower-box">
+                            <div class="icon-box">
+                                <div class="bg-box" style="background-image: url(/assets/landing_images/icons/icon-bg-3.png);"></div>
+                                <i class="fa-solid fa-helmet-safety"></i>
+                            </div>
+                            <h5>Compromiso con los operadores</h5>
+                            <a href="/operadores">"Una fuerza que crece"</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- QUIÉNES SOMOS? END -->
+
+
+<!-- PROCESO (FEATURES) -->
+<section id="procesos" class="process-style-two" style="background-image: url(/assets/landing_images/background/process-bg-1.jpg);">
+    <div class="auto-container">
+      <div class="sec-title text-center style-two">
+          <h2>Proceso simple y limpio</h2>
+          <p> Nos caracterizamos por asegurar continuidad de servicio, atención personalizada en conjunto con nuestras propuestas de mejora continua del producto y servicio.</p>
+          <div class="decor" style="background-image: url(/assets/landing_images/icons/decor-1.png);"></div>
+      </div>
+      <div class="inner-content">
+          <div class="line" style="background-image: url(/assets/landing_images/icons/line-1.png);"></div>
+          <div class="row clearfix">
+              <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                  <div class="work-block-two">
+                      <div class="inner-box">
+                          <div class="arrow-box" style="background-image: url(/assets/landing_images/icons/arrow-1.png);"></div>
+                          <div class="icon-box">
+                              <div class="border-line" style="background-image: url(/assets/landing_images/icons/border-1.png);"></div>
+                              <i class="fa-solid fa-heart"></i>
+                          </div>
+                          <div class="count-box wow zoomIn animated" data-wow-delay="00ms" data-wow-duration="1500ms"><span>01</span></div>
+                          <div class="content-box wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                              <h4><a class="text-decoration-none">Tus necesidades importan</a></h4>
+                              <p>Nos aseguramos día a día de brindar un servicio impecable que este a la altura de nuestros clientes.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                  <div class="work-block-two">
+                      <div class="inner-box">
+                          <div class="arrow-box" style="background-image: url(/assets/landing_images/icons/arrow-1.png);"></div>
+                          <div class="icon-box">
+                              <div class="border-line" style="background-image: url(/assets/landing_images/icons/border-1.png);"></div>
+                              <i class="fa-solid fa-rocket"></i>
+                          </div>
+                          <div class="count-box wow zoomIn animated" data-wow-delay="200ms" data-wow-duration="1500ms"><span>02</span></div>
+                          <div class="content-box wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                              <h4><a class="text-decoration-none">Tendrás equipos de calidad</a></h4>
+                              <p>Mantener un equipo de trabajo e infraestructura que asegure un servicio de primer nivel.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 work-block">
+                  <div class="work-block-two">
+                      <div class="inner-box">
+                          <div class="icon-box">
+                              <div class="border-line" style="background-image: url(/assets/landing_images/icons/border-1.png);"></div>
+                              <i class="fa-solid fa-brain"></i>
+                          </div>
+                          <div class="count-box wow zoomIn animated" data-wow-delay="400ms" data-wow-duration="1500ms"><span>03</span></div>
+                          <div class="content-box wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                              <h4><a class="text-decoration-none">Analizamos y Optimizamos</a></h4>
+                              <p>Incorporar nuevas tecnologías y mecanismos de trabajo más eficientes y rápidos.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        <div class="more-btn wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+          <div data-controller="contact" class="d-flex align-items-center">
+            <button class="theme-btn style-five text-decoration-none" data-action="contact#show"><i class='fa-solid fa-paint-roller'></i>Comenzar ahora</button>
+            <p class="d-none ms-4 mt-2 item-animate-1" data-contact-target="name"><strong><i class="me-1 fa-solid fa-user"></i></strong> Cristobal Mancilla SKL</p>
+            <p class="d-none ms-4 mt-2 text-decoration-none item-animate-2" data-contact-target="phone"><strong><i class="me-1 fa-brands fa-whatsapp"></i></strong><a href="https://wa.me/56987550756?text=Hola!%20Me%20gustaría%20recibir%20información%20de%20SKL!" target="_blank">+56987550756</a></p>
+            <p class="d-none ms-4 mt-2 text-decoration-none item-animate-3" data-contact-target="email"><strong><i class="me-1 fa-solid fa-paper-plane"></i></strong> <a href="mailto:Ventas@sklmaquinarias.cl">Ventas@sklmaquinarias.cl</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- PROCESO (FEATURES) END -->
+
+<!-- CLIENTES -->
+  <!-- <%#= render 'pages/shared/clientes' %> -->
+<!-- CLIENTES END -->
+
+<!-- NUEVOS -->
+  <!-- <%#= render 'pages/shared/nuevos' %> -->
+<!-- NUEVOS END -->
+
+
+<!-- CONTACTO -->
+<section class="industries-section" id="contact">
+  <div class="pattern-layer">
+    <div class="pattern-1" style="background-image: url(/assets/landing_images/shape/shape-57.png);"></div>
+    <div class="pattern-2" style="background-image: url(/assets/landing_images/shape/shape-58.png);"></div>
+  </div>
+  <div class="auto-container">
+    <div class="row clearfix">
+      <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+        <div class="content-box">
+          <div class="sec-title text-left light">
+            <p>Contacta con nosotros</p>
+            <h2>Crea una solicitud y rápidamente tendrás acceso a las requisiciones de maquinarias.</h2>
+            <div class="decor" style="background-image: url(/assets/landing_images/icons/decor-2.png);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <%= render partial: 'contact/form', locals: { contact: @contact } %>
+    </div>
+  </div>
+</section>
+<!-- CONTACTO END -->
+
+<!--Scroll to top-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="fas fa-angle-up"></span>
+</button>
+
+<!-- jequery plugins -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/jquery.countTo.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
+
+<!-- main-js -->
+<script src="assets/js/script.js"></script>
