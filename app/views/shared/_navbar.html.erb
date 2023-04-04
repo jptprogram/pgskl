@@ -44,8 +44,9 @@
                     <div class="btn-box">
                       <% if current_user %>
                         <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five text-decoration-none" %>
+                      <% else %>
+                        <a href="#procesos" class="theme-btn style-five text-decoration-none">Nuestros procesos</a>
                       <% end %>
-                      <a href="#procesos" class="theme-btn style-five text-decoration-none">Nuestros procesos</a>
                     </div>
                 </div>
             </div>
@@ -89,8 +90,9 @@
                 <div class="btn-box">
                   <% if current_user %>
                     <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five text-decoration-none" %>
+                  <% else %>
+                    <a href="#procesos" class="theme-btn style-five text-decoration-none">Nuestros procesos</a>
                   <% end %>
-                  <a href="#procesos" class="theme-btn style-five text-decoration-none">Nuestros procesos</a>
                 </div>
             </div>
         </div>
