@@ -6,7 +6,7 @@
       <h2 style="font-size: 24px"><%= @tractor.marca %></h2>
       <h2 style="font-size: 24px"><%= @tractor.modelo %></h2>
       <a href="<%= @tractor.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-      <p style="font-size: 14px;margin-bot: 12px;"><%= @tractor.disponible %></p>
+      <p style="font-size: 14px;margin-bot: 12px;"><%= @tractor.availability %></p>
     </div>
     <%= render 'shared/skl_info' %>
   </div>

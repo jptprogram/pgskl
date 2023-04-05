@@ -7,7 +7,7 @@
       <h2 style="font-size: 24px"><%= @repuesto.modelo %></h2>
       <h2 style="font-size: 24px"><%= @repuesto.precio %></h2>
       <a href="<%= @repuesto.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-      <p style="font-size: 14px;margin-bot: 12px;"><%= @repuesto.disponible %></p>
+      <p style="font-size: 14px;margin-bot: 12px;"><%= @repuesto.availability %></p>
     </div>
     <%= render 'shared/skl_info' %>
   </div>
