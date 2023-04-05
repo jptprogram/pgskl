@@ -17,11 +17,24 @@ class TranspaletaApiladorElectricosController < ApplicationController
     redirect_to transpaleta_apilador_electrico_path(@transpaleta)
   end
 
+  def edit
+    @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
+  end
+
+  def update
+    @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
+    if @transpaleta.update(transpaleta_params)
+      redirect_to transpaleta_apilador_electrico_path(@transpaleta)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
     @transpaleta.destroy
 
-    redirect_to transpaleta_apilador_electrico_path
+    redirect_to transpaleta_apilador_electricos_path
   end
 
   private

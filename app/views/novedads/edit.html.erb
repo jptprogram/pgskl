@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="container">
+    <H3>Novedades</H3>
+    <%= simple_form_for( @novedad,
+      data: {turbo: false}) do |f| %>
+
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.input :titulo, label: "Titulo",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "titulo" }%>
+
+        <%= f.input :descripcion, label: "Descripcion ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "descripcion" }%>
+
+
+
+        <%= f.input :photo, as: :file %>
+      </div>
+
+      <div class="btn btn-flat">
+        <%= f.button :submit, "Crear Novedad" %>
+      </div>
+    <% end %>
+  </div>
+</div>

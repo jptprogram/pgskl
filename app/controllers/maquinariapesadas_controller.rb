@@ -18,6 +18,19 @@ class MaquinariapesadasController < ApplicationController
     redirect_to maquinariapesada_path(@maquinariapesada)
   end
 
+  def edit
+    @maquinariapesada = Maquinariapesada.find(params[:id])
+  end
+
+  def update
+    @maquinariapesada = Maquinariapesada.find(params[:id])
+    if @maquinariapesada.update(maquinariapesada_params)
+      redirect_to maquinariapesada_path(@maquinariapesada)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @maquinariapesada = Maquinariapesada.find(params[:id])
     @maquinariapesada.destroy

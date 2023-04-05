@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <H3>Equipos a la venta</H3>
+  <%= simple_form_for( @vento,
+    data: {turbo: false}) do |f| %>
+
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+
+                <%# NEW INPUTS  %>
+      <%= f.input :marca, label: "Marca",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "marca" }%>
+
+      <%= f.input :modelo, label: "Modelo ",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "modelo" }%>
+
+      <%= f.input :disponible, label: "disponibilidad: ",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "disponible" }%>
+
+      <%= f.input :link, label: "link a especificaciones ",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "link" }%>
+
+              <%= f.input :descripcion, label: "Descripcion ",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "descripcion" }%>
+
+          <%= f.input :precio, label: "Precio: ",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "precio" }%>
+
+      <%= f.select :category, Vento::CATEGORIES, {}, {class: "form-control"} %>
+
+      <%= f.input :photo, as: :file %>
+
+
+    </div>
+
+    <div class="btn btn-flat" >
+      <%= f.button :submit, "Crear articulo a la venta" %>
+    </div>
+  <% end %>
+</div>

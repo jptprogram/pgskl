@@ -1,5 +1,10 @@
 <div class="container-fluid">
-  <h1>Gruas</h1>
+  <div class="d-flex align-items-center">
+    <h1>Gruas</h1>
+    <% if current_user %>
+      <%= link_to "Nuevo", new_grua_path, class: "btn btn-outline-dark ml-auto" %>
+    <% end %>
+  </div>
   <% if params[:combustion].present? || params[:all].present? %>
     <h1 style="margin-top: 16px;font-size: 18px">Combustion:</h1>
     <%= render partial: "gruas/shared/card", locals: { category: "Combustion" } %>

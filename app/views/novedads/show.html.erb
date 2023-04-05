@@ -1,15 +1,18 @@
-<div class="container-fluid">
-<div class="container" style="  display: flex;justify-content: center;">
-  <div class="card-product" style="margin-top: 16px;">
-    <%= cl_image_tag @novedad.photo.key, height: 600, width: 800, crop: :fill %>
-    <div class="card-product-infos">
-      <h2 style="font-size: 24px"><%= @novedad.titulo %></h2>
-      <h2 style="font-size: 24px"><%= @novedad.descripcion %></h2>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div class="card-product mr-2">
+      <%= cl_image_tag @novedad.photo.key, height: 600, width: 800, crop: :fill %>
+      <div class="card-product-infos">
+        <h2 style="font-size: 18px"><%= @novedad.titulo %></h2>
+        <h2 style="font-size: 18px"><%= @novedad.descripcion %></h2>
+      </div>
+      <%= render 'shared/skl_info' %>
     </div>
-    <%= render 'shared/skl_info' %>
   </div>
-</div>
   <% if user_signed_in? %>
-  <%= button_to "Delete", novedad_path(@novedad), method: :delete, data: { confirm: "Are you sure?" } %>
+    <div class="container buttons">
+    <%= link_to "Edit", edit_novedad_path(@novedad), class: "btn btn-outline-dark" %>
+    <%= link_to "Delete", novedad_path(@novedad), class: "btn btn-outline-danger", data: { turbo_method: :delete, turbo_confirm: "Está seguro?" } %>
+    </div>
   <% end %>
 </div>

@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="container">
+    <H3>Maquinria Pesada</H3>
+    <%= simple_form_for( @maquinariapesada,
+      data: {turbo: false}) do |f| %>
+
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.input :marca, label: "Marca",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "marca" }%>
+        <%= f.input :modelo, label: "Modelo ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "modelo" }%>
+        <%= f.input :disponible, label: "disponibilidad: ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "disponible" }%>
+        <%= f.input :link, label: "link a especificaciones ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "link" }%>
+        <%= f.input :descripcion, label: "Descripcion ",
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "descripcion" }%>
+
+
+
+        <%= f.input :photo, as: :file %>
+      </div>
+
+      <div class="btn btn-flat">
+        <%= f.button :submit, "Crear Maquinaria Pesada" %>
+      </div>
+    <% end %>
+  </div>
+</div>
