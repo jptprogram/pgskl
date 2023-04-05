@@ -17,6 +17,19 @@ class VentosController < ApplicationController
     redirect_to vento_path(@vento)
   end
 
+  def edit
+    @vento = Vento.find(params[:id])
+  end
+
+  def update
+    @vento = Vento.find(params[:id])
+    if @vento.update(vento_params)
+      redirect_to vento_path(@vento)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @vento = Vento.find(params[:id])
     @vento.destroy

@@ -17,6 +17,19 @@ class GruasController < ApplicationController
     redirect_to grua_path(@grua)
   end
 
+  def edit
+    @grua = Grua.find(params[:id])
+  end
+
+  def update
+    @grua = Grua.find(params[:id])
+    if @grua.update(grua_params)
+      redirect_to grua_path(@grua)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @grua = Grua.find(params[:id])
     @grua.destroy

@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :equipos, only: [:new, :create, :index, :show, :delete]
   resources :gruas
-  resources :tractors, only: [:new, :create, :index, :show, :delete]
-  resources :maquinariapesadas, only: [:new, :create, :index, :show, :delete]
-  resources :ventos, only: [:new, :create, :index, :show, :delete]
-  resources :repuestos, only: [:new, :create, :index, :show, :delete]
-  resources :novedads, only: [:new, :create, :index, :show, :delete], path: "novedades"
-  resources :transpaleta_apilador_electricos, only: [:new, :create, :index, :show, :delete], path: "transpaletas"
+  resources :tractors
+  resources :maquinariapesadas
+  resources :ventos
+  resources :repuestos
+  resources :novedads, path: "novedades"
+  resources :transpaleta_apilador_electricos, path: "transpaletas"
 
   get "operadores", to: "pages#operadores", as: :operadores
 

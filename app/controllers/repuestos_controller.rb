@@ -17,6 +17,19 @@ class RepuestosController < ApplicationController
     redirect_to repuesto_path(@repuesto)
   end
 
+  def edit
+    @repuesto = Repuesto.find(params[:id])
+  end
+
+  def update
+    @repuesto = Repuesto.find(params[:id])
+    if @repuesto.update(repuesto_params)
+      redirect_to repuesto_path(@repuesto)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @repuesto = Repuesto.find(params[:id])
     @repuesto.destroy
