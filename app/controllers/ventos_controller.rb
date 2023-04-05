@@ -34,7 +34,7 @@ class VentosController < ApplicationController
     @vento = Vento.find(params[:id])
     @vento.destroy
 
-    redirect_to ventos_path
+    redirect_to ventos_path(nuevos: true)
   end
 
   private

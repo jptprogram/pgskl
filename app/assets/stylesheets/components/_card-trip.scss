@@ -84,7 +84,7 @@
 }
 
 
-.card-product .card-product-infos {
+.card-product .card-product-infos-equipos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -93,19 +93,19 @@
   flex-direction: column;
 }
 
-.card-product-infos .card-product-user {
+.card-product-infos-equipos .card-product-user {
   position: absolute;
   right: 16px;
   top: -20px;
   width: 40px;
 }
 
-.card-product-infos a {
+.card-product-infos-equipos a {
   text-decoration: none;
   color:$verde_skl;
   font-size: 24px;
 }
 
-.card-product-infos a:hover {
+.card-product-infos-equipos a:hover {
   color:$rojo_skl;
 }

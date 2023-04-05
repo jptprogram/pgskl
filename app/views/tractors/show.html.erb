@@ -1,22 +1,23 @@
-<div class="container-fluid">
-<div class="container" style="  display: flex;justify-content: center;">
-  <div class="card-product" style="margin-top: 16px;">
-    <%= cl_image_tag @tractor.photo.key, height: 600, width: 800, crop: :fill %>
-    <div class="card-product-infos">
-      <h2 style="font-size: 24px"><%= @tractor.marca %></h2>
-      <h2 style="font-size: 24px"><%= @tractor.modelo %></h2>
-      <a href="<%= @tractor.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
-      <p style="font-size: 14px;margin-bot: 12px;"><%= @tractor.availability %></p>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div class="card-product mr-2">
+      <%= cl_image_tag @tractor.photo.key, height: 600, width: 800, crop: :fill %>
+      <div class="card-product-infos">
+        <h2 style="font-size: 18px"><%= @tractor.marca %></h2>
+        <h2 style="font-size: 18px"><%= @tractor.modelo %></h2>
+        <p class="availability" style="font-size: 14px;"><%= @tractor.availability %></p>
+      </div>
+      <%= render 'shared/skl_info' %>
     </div>
-    <%= render 'shared/skl_info' %>
+    <div class="card-product description-card">
+      <h3 style="font-size: 18px">Descripción (<a href="<%= @tractor.link.to_s %>" style="font-size: 16px">Ficha técnica</a>):</h3>
+      <h3 style="font-size: 18px"><%= @tractor.descripcion %></h3>
+    </div>
   </div>
-  <div class="card-product" style="margin-top: 16px;margin-left: 16px;padding: 12px;">
-  <h3 h2 style="font-size:24px"> Descripcion: </h3>
-   <h3 h2 style="font-size:24px"> <%= @tractor.descripcion %></h3>
-  </div>
-</div>
   <% if user_signed_in? %>
-    <%= button_to "Delete", tractor_path(@tractor), method: :delete, class: "btn btn-outline-dark", data: { confirm: "Are you sure?" } %>
-    <%= link_to "Edit", edit_tractor_path(@tractor), class: "btn btn-outline-dark"%>
+    <div class="container buttons">
+    <%= link_to "Edit", edit_tractor_path(@tractor), class: "btn btn-outline-dark" %>
+    <%= link_to "Delete", tractor_path(@tractor), class: "btn btn-outline-danger", data: { turbo_method: :delete, turbo_confirm: "Está seguro?" } %>
+    </div>
   <% end %>
 </div>

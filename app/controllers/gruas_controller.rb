@@ -33,7 +33,7 @@ class GruasController < ApplicationController
   def destroy
     @grua = Grua.find(params[:id])
     @grua.destroy
-    redirect_to gruas_path
+    redirect_to gruas_path(all: true)
     flash[:success] = "Grua eliminada correctamente"
   end
 

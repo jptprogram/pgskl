@@ -34,7 +34,7 @@ class TranspaletaApiladorElectricosController < ApplicationController
     @transpaleta = TranspaletaApiladorElectrico.find(params[:id])
     @transpaleta.destroy
 
-    redirect_to transpaleta_apilador_electrico_path
+    redirect_to transpaleta_apilador_electricos_path
   end
 
   private
