@@ -3,8 +3,8 @@
   <div class="card-product" style="margin-top: 16px;">
     <%= cl_image_tag @transpaleta.photo.key, height: 600, width: 800, crop: :fill %>
     <div class="card-product-infos">
-      <h2 style="font-size: 24px"><%= @transpaleta.modelo %></h2>
       <h2 style="font-size: 24px"><%= @transpaleta.marca %></h2>
+      <h2 style="font-size: 24px"><%= @transpaleta.modelo %></h2>
       <a href="<%= @transpaleta.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
       <p style="font-size: 14px;margin-bot: 12px;"><%= @transpaleta.disponible %></p>
     </div>

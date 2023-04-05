@@ -2,8 +2,8 @@
   <div class="card-product" style="margin-top: 16px;">
     <%= cl_image_tag @grua.photo.key, height: 600, width: 800, crop: :fill %>
     <div class="card-product-infos">
-      <h2 style="font-size: 18px"><%= @grua.modelo %></h2>
       <h2 style="font-size: 18px"><%= @grua.marca %></h2>
+      <h2 style="font-size: 18px"><%= @grua.modelo %></h2>
       <a href="<%= @grua.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
       <p style="font-size: 14px;margin-bot: 12px;"><%= @grua.disponible %></p>
     </div>
