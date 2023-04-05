@@ -10,6 +10,7 @@
   </div>
 </div>
   <% if user_signed_in? %>
-  <%= button_to "Delete", novedad_path(@novedad), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= button_to "Delete", novedad_path(@novedad), method: :delete, class: "btn btn-outline-dark", data: { confirm: "Are you sure?" } %>
+    <%= link_to "Edit", edit_novedad_path(@novedad), class: "btn btn-outline-dark" %>
   <% end %>
 </div>

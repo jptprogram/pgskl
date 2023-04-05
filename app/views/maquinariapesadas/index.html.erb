@@ -1,5 +1,10 @@
 <div class="container-fluid">
-  <h1>Maquinaria Pesada</h1>
+  <div class="d-flex align-items-center">
+    <h1>Maquinaria Pesada</h1>
+    <% if current_user %>
+      <%= link_to "Nuevo", new_maquinariapesada_path, class: "btn btn-outline-dark ml-auto" %>
+    <% end %>
+  </div>
   <div class="cards">
     <% @maquinariapesadas.each do |maquinariapesada|  %>
       <div class="card-trip img-fluid item-animate">

@@ -17,6 +17,7 @@
   </div>
 </div>
   <% if user_signed_in? %>
-  <%= button_to "Delete", repuesto_path(@repuesto), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= button_to "Delete", repuesto_path(@repuesto), method: :delete, class: "btn btn-outline-dark", data: { confirm: "Are you sure?" } %>
+    <%= link_to "Edit", edit_repuesto_path(@repuesto), class: "btn btn-outline-dark" %>
   <% end %>
 </div>

@@ -1,5 +1,10 @@
 <div class="container-fluid">
-  <h1>Transpaletas/Apiladores</h1>
+  <div class="d-flex align-items-center">
+    <h1>Transpaletas/Apiladores</h1>
+    <% if current_user %>
+      <%= link_to "Nuevo", new_transpaleta_apilador_electrico_path, class: "btn btn-outline-dark ml-auto" %>
+    <% end %>
+  </div>
   <div class="cards">
       <% @transpaletas.each do |transpaleta|  %>
         <div class="card-trip img-fluid item-animate">

@@ -16,6 +16,7 @@
   </div>
 </div>
   <% if user_signed_in? %>
-  <%= button_to "Delete", tractor_path(@tractor), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= button_to "Delete", tractor_path(@tractor), method: :delete, class: "btn btn-outline-dark", data: { confirm: "Are you sure?" } %>
+    <%= link_to "Edit", edit_tractor_path(@tractor), class: "btn btn-outline-dark"%>
   <% end %>
 </div>

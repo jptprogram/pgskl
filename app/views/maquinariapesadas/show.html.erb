@@ -16,6 +16,8 @@
   </div>
 </div>
   <% if user_signed_in? %>
-  <%= button_to "Delete", maquinariapesada_path(@maquinariapesada), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= button_to "Delete", maquinariapesada_path(@maquinariapesada), class: "btn btn-outline-dark", method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= link_to "Edit", edit_maquinariapesada_path(@maquinariapesada), class: "btn btn-outline-dark" %>
   <% end %>
+
 </div>
