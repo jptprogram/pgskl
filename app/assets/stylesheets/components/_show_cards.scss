@@ -1,0 +1,35 @@
+.card-product {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.card-product-infos {
+  margin-top: 12px;
+}
+
+.card-product-infos h2,
+.card-product-infos a,
+.card-product-infos p {
+  margin-bottom: 8px;
+}
+
+.description-card h3 {
+  margin-bottom: 8px;
+}
+
+.availability {
+  background-color: #198754;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.buttons {
+  margin-top: 16px;
+}

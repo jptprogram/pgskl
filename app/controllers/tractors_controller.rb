@@ -17,6 +17,19 @@ class TractorsController < ApplicationController
     redirect_to tractor_path(@tractor)
   end
 
+  def edit
+    @tractor = Tractor.find(params[:id])
+  end
+
+  def update
+    @tractor = Tractor.find(params[:id])
+    if @tractor.update(tractor_params)
+      redirect_to tractor_path(@tractor)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @tractor = Tractor.find(params[:id])
     @tractor.destroy

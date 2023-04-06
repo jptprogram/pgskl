@@ -18,6 +18,19 @@ class NovedadsController < ApplicationController
     redirect_to novedad_path(@novedad)
   end
 
+  def edit
+    @novedad = Novedad.find(params[:id])
+  end
+
+  def update
+    @novedad = Novedad.find(params[:id])
+    if @novedad.update(novedad_params)
+      redirect_to novedad_path(@novedad)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @novedad = Novedad.find(params[:id])
     @novedad.destroy

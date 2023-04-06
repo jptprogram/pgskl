@@ -1,5 +1,10 @@
 <div class="container-fluid">
-  <h1>Ventas</h1>
+  <div class="d-flex align-items-center">
+    <h1>Ventas</h1>
+    <% if current_user %>
+      <%= link_to "Nuevo", new_vento_path, class: "btn btn-outline-primary ml-auto" %>
+    <% end %>
+  </div>
   <% if params[:nuevos].present? || params[:all].present? %>
     <h1 style="margin-top: 16px;font-size: 18px">Equipos Nuevos:</h1>
     <%= render partial: "ventos/shared/card", locals: { category: "Nuevos" } %>
