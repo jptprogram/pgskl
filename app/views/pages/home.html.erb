@@ -6,7 +6,9 @@
             <div class="col-lg-5 col-md-12 col-sm-12 content-column">
                 <div class="content-box">
                     <p class="mt-4">Arriendo y venta de equipos con  <strong>el mejor servicio</strong> y la mejor <strong>continuidad operativa</strong> del mercado!</p>
-                    <%= link_to "<i class='fa-solid fa-person-digging'></i>Ver Maquinarias Disponibles".html_safe, gruas_path(all: true), class: "theme-btn style-five text-decoration-none" %>
+                    <%= link_to  gruas_path(all: true), class: "theme-btn style-five text-decoration-none" do %>
+                     <i class="fa-solid fa-circle-check"></i> Ver Maquinarias Disponibles"
+                    <% end %>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 image-column">
@@ -148,7 +150,7 @@
           </div>
         <div class="more-btn wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
           <div data-controller="contact" class="d-flex align-items-center">
-            <button class="theme-btn style-five text-decoration-none" data-action="contact#show"><i class='fa-solid fa-paint-roller'></i>Comenzar ahora</button>
+            <button class="theme-btn style-five text-decoration-none" data-action="contact#show"><i class="fa-regular fa-paper-plane"></i>Comenzar ahora</button>
             <p class="d-none ms-4 mt-2 item-animate-1" data-contact-target="name"><strong><i class="me-1 fa-solid fa-user"></i></strong> Cristobal Mancilla SKL</p>
             <p class="d-none ms-4 mt-2 text-decoration-none item-animate-2" data-contact-target="phone"><strong><i class="me-1 fa-brands fa-whatsapp"></i></strong><a href="https://wa.me/56987550756?text=Hola!%20Me%20gustaría%20recibir%20información%20de%20SKL!" target="_blank">+56987550756</a></p>
             <p class="d-none ms-4 mt-2 text-decoration-none item-animate-3" data-contact-target="email"><strong><i class="me-1 fa-solid fa-paper-plane"></i></strong> <a href="mailto:Ventas@sklmaquinarias.cl">Ventas@sklmaquinarias.cl</a></p>
