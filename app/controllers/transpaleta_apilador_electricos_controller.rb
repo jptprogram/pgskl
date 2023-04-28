@@ -40,6 +40,6 @@ class TranspaletaApiladorElectricosController < ApplicationController
   private
 
   def transpaleta_params
-    params.require(:transpaleta).permit(:modelo, :marca, :disponible, :link, :photo, :descripcion)
+    params.require(:transpaleta_apilador_electrico).permit(:modelo, :marca, :disponible, :link, :photo, :descripcion)
   end
 end
