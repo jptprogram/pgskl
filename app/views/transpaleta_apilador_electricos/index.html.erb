@@ -12,7 +12,7 @@
          <div class="card-trip-infos">
             <a><%= link_to " #{transpaleta.modelo}", transpaleta_apilador_electrico_path(transpaleta) %></a>
             <p> Marca: <%= transpaleta.marca %></h2>
-            <p> disponibilidad: <%= transpaleta.disponible %></h6>
+            <p class="availability" style="font-size: 14px;"><%= transpaleta.availability %></p>
             <p></p>
             <a href="<%= transpaleta.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
           </div>

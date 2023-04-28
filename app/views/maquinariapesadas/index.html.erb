@@ -12,7 +12,7 @@
         <div class="card-trip-infos">
           <a><%= link_to " #{maquinariapesada.modelo}"  , maquinariapesada_path(maquinariapesada) %></a>
           <p> Marca: <%= maquinariapesada.marca %></h2>
-          <p> disponibilidad: <%= maquinariapesada.disponible %></h6>
+          <p class="availability" style="font-size: 14px;"><%= maquinariapesada.availability %></p>
           <p></p>
           <a href="<%= maquinariapesada.link.to_s%>" style="font-size: 16px">Ficha tecnica </a>
         </div>
