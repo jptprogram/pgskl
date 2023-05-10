@@ -13,9 +13,13 @@ class VentosController < ApplicationController
   end
 
   def create
-    @vento = Vento.create(vento_params)
-    redirect_to vento_path(@vento)
-  end
+    @vento = Vento.new(vento_params)
+    if @vento.save
+      redirect_to vento_path(@vento)
+    else
+      render :new
+    end
+   end
 
   def edit
     @vento = Vento.find(params[:id])
