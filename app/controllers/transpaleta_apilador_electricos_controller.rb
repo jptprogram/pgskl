@@ -13,8 +13,12 @@ class TranspaletaApiladorElectricosController < ApplicationController
   end
 
   def create
-    @transpaleta = TranspaletaApiladorElectrico.create(transpaleta_params)
-    redirect_to transpaleta_apilador_electrico_path(@transpaleta)
+    @transpaleta = TranspaletaApiladorElectrico.new(transpaleta_params)
+    if @transpaleta.save
+      redirect_to transpaleta_apilador_electrico_path(@transpaleta)
+    else
+      render :new
+    end
   end
 
   def edit

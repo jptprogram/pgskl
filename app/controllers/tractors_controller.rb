@@ -13,8 +13,12 @@ class TractorsController < ApplicationController
   end
 
   def create
-    @tractor = Tractor.create(tractor_params)
-    redirect_to tractor_path(@tractor)
+    @tractor = Tractor.new(tractor_params)
+    if @tractor.save
+      redirect_to tractor_path(@tractor)
+    else
+      render :new
+    end
   end
 
   def edit

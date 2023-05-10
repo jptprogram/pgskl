@@ -14,8 +14,12 @@ class MaquinariapesadasController < ApplicationController
   end
 
   def create
-    @maquinariapesada = Maquinariapesada.create(maquinariapesada_params)
-    redirect_to maquinariapesada_path(@maquinariapesada)
+    @maquinariapesada = Maquinariapesada.new(maquinariapesada_params)
+    if @maquinariapesada.save
+      redirect_to maquinariapesada_path(@maquinariapesada)
+    else
+      render :new
+    end
   end
 
   def edit

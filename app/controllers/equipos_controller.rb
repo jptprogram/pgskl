@@ -15,8 +15,12 @@ class EquiposController < ApplicationController
   end
 
   def create
-    @equipo = Equipo.create(equipo_params)
-    redirect_to equipo_path(@equipo)
+    @equipo = Equipo.new(equipo_params)
+    if @equipo.save
+      redirect_to @equipo
+    else
+      render 'new'
+    end
   end
 
   private

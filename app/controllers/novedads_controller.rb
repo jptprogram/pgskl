@@ -14,8 +14,12 @@ class NovedadsController < ApplicationController
   end
 
   def create
-    @novedad = Novedad.create(novedad_params)
-    redirect_to novedad_path(@novedad)
+    @novedad = Novedad.new(novedad_params)
+    if @novedad.save
+      redirect_to novedad_path(@novedad)
+    else
+      render :new
+    end
   end
 
   def edit

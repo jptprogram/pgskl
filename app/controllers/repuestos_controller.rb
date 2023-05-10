@@ -13,8 +13,12 @@ class RepuestosController < ApplicationController
   end
 
   def create
-    @repuesto = Repuesto.create(repuesto_params)
-    redirect_to repuesto_path(@repuesto)
+    @repuesto = Repuesto.new(repuesto_params)
+    if @repuesto.save
+      redirect_to repuesto_path(@repuesto)
+    else
+      render :new
+    end
   end
 
   def edit
