@@ -21,6 +21,4 @@ class Vento < ApplicationRecord
   validates :modelo, presence: true
   validates :marca, presence: true
   validates :link, presence: true
-  validates :disponible, presence: true
-  validates :precio, presence: true
 end

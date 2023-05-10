@@ -20,6 +20,5 @@ class Grua < ApplicationRecord
   validates :modelo, presence: true
   validates :marca, presence: true
   validates :link, presence: true
-  validates :disponible, presence: true
   validates :category, inclusion: { in: CATEGORIES }
 end

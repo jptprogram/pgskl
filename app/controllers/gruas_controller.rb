@@ -13,8 +13,12 @@ class GruasController < ApplicationController
   end
 
   def create
-    @grua = Grua.create(grua_params)
-    redirect_to grua_path(@grua)
+    @grua = Grua.new(grua_params)
+    if @grua.save
+      redirect_to grua_path(@grua)
+    else
+      render :new
+    end
   end
 
   def edit

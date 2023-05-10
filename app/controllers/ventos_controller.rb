@@ -40,6 +40,6 @@ class VentosController < ApplicationController
   private
 
   def vento_params
-    params.require(:vento).permit(:modelo,:marca,:disponible,:link,:photo,:precio,:descripcion)
+    params.require(:vento).permit(:modelo,:marca,:link,:photo,:precio,:descripcion, :category)
   end
 end
