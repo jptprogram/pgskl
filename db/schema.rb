@@ -143,7 +143,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "disponible"
+    t.string "disponible"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
