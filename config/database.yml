@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: pgskl_production
-  username: pgskl
-  password: <%= ENV["PGSKL_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
