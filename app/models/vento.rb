@@ -5,7 +5,7 @@
 #  id          :bigint           not null, primary key
 #  category    :string
 #  descripcion :string
-#  disponible  :string
+#  disponible  :boolean          default(TRUE)
 #  link        :string
 #  marca       :string
 #  modelo      :string
@@ -21,4 +21,9 @@ class Vento < ApplicationRecord
   validates :modelo, presence: true
   validates :marca, presence: true
   validates :link, presence: true
+  validates :category, inclusion: { in: CATEGORIES }
+  validates :descripcion, presence: true
+  # validates :disponible, inclusion: { in: [true, false] }, presence: true
+  validates :precio, presence: true
+  validates :photo, presence: true
 end

@@ -5,7 +5,7 @@
 #  id          :bigint           not null, primary key
 #  category    :string
 #  descripcion :string
-#  disponible  :string
+#  disponible  :boolean          default(TRUE)
 #  link        :string
 #  marca       :string
 #  modelo      :string

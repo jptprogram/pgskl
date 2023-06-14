@@ -4,7 +4,7 @@
 #
 #  id          :bigint           not null, primary key
 #  descripcion :string
-#  disponible  :boolean
+#  disponible  :boolean          default(TRUE)
 #  link        :string
 #  marca       :string
 #  modelo      :string
@@ -19,4 +19,7 @@ class Repuesto < ApplicationRecord
   validates :marca, presence: true
   validates :link, presence: true
   validates :precio, presence: true
+  validates :descripcion, presence: true
+  validates :disponible, inclusion: { in: [true, false] }
+  validates :photo, presence: true
 end

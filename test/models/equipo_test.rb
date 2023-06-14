@@ -4,7 +4,7 @@
 #
 #  id          :bigint           not null, primary key
 #  descripcion :string
-#  disponible  :boolean
+#  disponible  :boolean          default(TRUE)
 #  link        :string
 #  marca       :string
 #  modelo      :string

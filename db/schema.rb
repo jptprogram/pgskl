@@ -56,7 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   create_table "equipos", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -66,7 +66,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   create_table "gruas", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -77,7 +77,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   create_table "maquinariapesadas", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -95,7 +95,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
     t.string "modelo"
     t.string "marca"
     t.string "link"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "precio"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -105,7 +105,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   create_table "tractors", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -115,7 +115,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
   create_table "transpaleta_apilador_electricos", force: :cascade do |t|
     t.string "modelo"
     t.string "marca"
-    t.boolean "disponible"
+    t.boolean "disponible", default: true
     t.string "link"
     t.string "descripcion"
     t.datetime "created_at", null: false
@@ -143,7 +143,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_31_210759) do
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "disponible"
+    t.boolean "disponible", default: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
