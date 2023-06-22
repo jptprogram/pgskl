@@ -87,11 +87,12 @@
                       </ul>
                       </div>
                 </nav>
-                <div class="btn-box">
+
                   <% if current_user %>
+                  <div class="btn-box">
                     <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: "theme-btn style-five text-decoration-none" %>
+                  </div>
                   <% else %>
-                    <a href="#procesos" class="theme-btn style-five text-decoration-none">Nuestros procesos</a>
                   <% end %>
                 </div>
             </div>
